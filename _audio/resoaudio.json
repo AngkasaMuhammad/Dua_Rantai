@@ -1,0 +1,12 @@
+{
+	"audio":{
+		"type":"audio_buffer_list",
+		"descriptor":{},
+		"data":"audio.tsv"
+	},
+	"aucon_env":{
+		"type":"audio_controller",
+		"descriptor":{},
+		"data":"auconenv.tsv"
+	}
+}

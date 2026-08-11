@@ -1,0 +1,110 @@
+Bikin blender 5.1 addon WowExporeter:
+
+sampe sini:
+V	-edit parent info
+V	-vertex format
+V		-offset
+V	-wasm memory
+V		-wasmmem_size
+V	-js file_buffer untuk InvGloBone masuk js
+V	-addon, bikin validasi
+V	-tunggu coba0.js loaded
+V	-tutup log
+V	-timeline time negative
+	-keyframe animasi
+V		-action strip bikin sendiri
+V		-uniform struct di resolainlain.json
+V		-ani_uni.tsv
+V		-pipe & renderpass ,data animasi nya disimpan di .tsv
+		-wgsl switch case
+V		-audio pos
+>>>		-bone au_stick ketinggalan di bawah, saat takeoff
+V	-ADA ERROR _aucon, garagara time negative
+V	-bikin NLA exporter
+V		-bikin if, checkbox [object nla, track, strip,] true untuk export
+V	-bikin object
+V		-stick ga pake bones
+V		-wave ga pake mesh
+V		-stick inst ikut wave bones
+V		-pose chara0 perosotan di stick bomb
+V			-aku tambah bone "root" jadi error, harus ada keyframenya
+V	-munculin bunga
+V	-warna baju
+V	-audio
+V		-pahami source.start(), untuk bikin kolom "end" di aucon .tsv
+V	-GLITCH, baju lecet saat takeoff
+
+
+catatan --------------------------------
+	-.animation_data.nla_tracks tersusun mundur
+	
+
+==========================================
+	-urutan bikin mesh
+		-new obj, arm
+		-edit wasm
+			-import global
+			-write_inst_....
+			-edit offset di uniform other
+		-edit _info_input pipeline
+		-edit wgsl
+		-edit resolainlain uni size
+		-edit ani_uni
+		
+
+
+
+
+
+
+
+
+	- vertex
+		- ganti instance dari vertex ke geonodes -> instance
+	- armature
+		- parent
+		- info
+	- animation
+
+- armature
+	dari blender)
+	wasm_mem (terpisah)
+	storage_struct
+	storage
+	uniform
+
+
+
+	|input	|json_part
+	.	.
+	|bl_arm	|parent
+	|sto_offset +inst_cou	|sto_st
+	|	|
+	|	|
+	|	|
+
+|symbol	|arti
+.	.
+|bl	|blender
+|js	|javascript
+|m	|mesh
+|o	|object
+|b	|bone
+|i	|inverted
+|s	|storage
+|mc	|matrix count
+|iv	|instanced vertex
+|...	|multiple 
+
+wasm_memory berisi :
+	src	dst	nama	butuh
+	|	|	|	|
+	bl&js	iv	m... 	storage_struct ..., wasm_global bufoffset...
+	bl	u	m... mc	wasm_global count...
+	bl	s	m... i b...	wasm_global bufoffset...
+	js	s	m... o...	storage_struct
+	
+
+
+
+

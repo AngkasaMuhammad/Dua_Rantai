@@ -1,0 +1,6 @@
+resoutil.json
+resolainlain.json
+_object/info.json
+ani/act0.json
+ani/act1.json
+_audio/resoaudio.json

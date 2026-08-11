@@ -1,0 +1,10 @@
+src	subsrc	volume	buftrimstart	buftrimend	bufscale	start	end	mesh	instance_index	bone	comment
+audio	suara stick	2.	.5	3.	.2	3.4	6.7	chara0	0	au_stick	
+audio	suara stick	1.	0	src	.5	3.1	7	chara0	0	au_stick	
+audio	suara card	2.	0	src	1.	5.5	6.5	chara0	0	au_stick	
+audio	suara card	2.	0	src	1.	5.6	6.5	chara0	0	au_stick	
+audio	suara card	2.	0	src	1.	5.8	6.5	chara0	0	au_stick	
+audio	suara payung	2.	0	src	1.	4.7	trimmed	chara0	0	au_stick	
+audio	suara pesawat	2.5	0	src	1.	6.	endless	chara0	0	au_stick	
+audio	suara pesawat	2.5	0	src	1.1	6.2	endless	chara0	0	au_stick	
+audio	suara pesawat	2.5	0	src	1.1	6.7	endless	chara0	0	au_stick	

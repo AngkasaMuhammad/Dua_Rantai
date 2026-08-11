@@ -1,0 +1,9 @@
+{
+	"cubepllllllllllllll": {
+		"type": "gpu_pipeline_layout",
+		"descriptor": {
+			"label": "ini cube pl",
+			"bindGroupLayouts": []
+		}
+	}
+}

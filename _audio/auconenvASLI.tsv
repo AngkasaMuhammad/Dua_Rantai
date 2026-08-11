@@ -1,0 +1,5 @@
+src	subsrc	volume	buftrimstart	buftrimend	bufduration	bufscale	start	mesh	instance_index	bone
+audio	suara angin	1.	0	src	endless	1.0	-4.	chara0	0	b_topi
+audio	suara ayunan0	.04	0	src	endless	1.0	-4.	chara0	0	b_topi
+audio	suara ayunan1	.04	0	src	endless	1.0	-4.	chara0	0	b_topi
+audio	suara stick	3.	1	4	7	.5	3.4	chara0	0	au_stick

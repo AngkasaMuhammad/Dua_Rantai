@@ -1,0 +1,2 @@
+_wasm/draw.wasm
+_wasm/audio.wasm

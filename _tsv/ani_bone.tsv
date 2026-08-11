@@ -1,0 +1,9 @@
+track	mesh	instance_index	commmment
+track0	cam	0	
+badanputar	chara0	0	[bones dalam track ini] animates [bones dalam instance]
+tr1_chara0	chara0	0	[bones dalam track ini] animates [bones dalam instance]
+tr_chara0	chara0	0	lalu, [bones dalam track ini] animates [[bones yg belum animated] dalam instance]
+tr_timer	stick	0	
+track_wave	wave	0	
+pecut	pecut	0	
+tankgerak	tank	0	baru, tank

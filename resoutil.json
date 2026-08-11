@@ -1,0 +1,34 @@
+{
+	"deptex": {
+		"type": "gpu_texture",
+		"descriptor": {
+			"label": "this is depth texture",
+			"size": "(canvas)",
+			"format": "depth24plus",
+			"usage": 16
+		},
+		"data": null
+	},
+	"_bufkosong": {
+		"type": "gpu_buffer",
+		"descriptor": {
+			"size": 0,
+			"usage": 44,
+			"label": "buf koosoonnggg"
+		},
+		"data": "data:,"
+	},
+	"mod": {
+		"type": "gpu_shader_module",
+		"descriptor": {
+			"label": "ini mesh module",
+			"code": "mod.wgsl"
+		}
+	},
+	"sampler": {
+		"type": "gpu_sampler",
+		"descriptor": {
+			"label": "ini sampler kosongan"
+		}
+	}
+}

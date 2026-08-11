@@ -1,0 +1,182 @@
+
+
+html, body {
+    overflow: hidden; /* Add this - disables body scroll */
+}
+html{
+	height:100%;
+}
+body{
+	background-color:#007700;
+	color:white;
+	font-family:Consolas;
+	margin:0px;
+	height:100%;
+}
+canvas{
+	image-rendering: pixelated;
+	display: block;
+	width: 100vw;
+	height: 100vh;
+}
+button{
+	font-size:22px;
+}
+body, canvas {
+	touch-action: none;
+}
+
+svg.button{
+	width:33px;
+	height:33px;
+}
+
+
+
+
+
+#ui{
+	position:absolute;
+	left:0px;
+	top:0px;
+	height:100%;
+	width: 100%;
+	display:flex;
+}
+#menu,
+#content > *{
+	background:#00000066;
+}
+#menu{
+	height:inherit;
+    max-width: min-content;
+    overflow-y: scroll;
+}
+#ui:has(#m_timeline:not(.active)) #p_timeline,
+#ui:has(#m_camera:not(.active)) #p_camera,
+#ui:has(#m_timestamp:not(.active)) #p_timestamp,
+#ui:has(#m_log:not(.active)) #p_log,
+#menu:not(:has(.active)):not(:hover) > *
+{
+	display:none;
+}
+#content{
+	flex:1;
+	overflow:scroll;
+}
+#content > *{
+    white-space: nowrap;
+	width:fit-content;
+}
+#p_timeline,
+#p_camera,
+#p_timestamp
+{
+	user-select:none;
+}
+#p_timeline > span{
+    font-size: 22px;
+	vertical-align:super;
+}
+#time,
+#speed
+{
+	cursor: ew-resize;
+}
+#p_timestamp table,
+#p_timestamp td
+{
+	border-collapse:collapse;
+	border-left: 2px solid #00ff0077;
+	border-right: 2px solid #00ff0077;
+}
+#p_timestamp table{
+	border-bottom: 2px solid #00ff0077;
+}
+#p_timestamp thead td
+{
+	padding:7px;
+    font-weight: bold;
+    text-align: center;
+	border: 2px solid #00ff0077;
+}
+#p_timestamp td{
+	padding-left:7px;
+	padding-right:7px;
+}
+#p_timestamp tr{
+	
+}
+#p_log{
+	width:fit-content;
+	min-width:stretch;
+	height:fit-content;
+	font-size:11px;
+	color:#00ff00;
+	background: #00000066;
+}
+#p_log *{
+    width: max-content;
+    white-space: pre;
+}
+#moutex{
+	tab-size: 4;
+	white-space: pre;
+	text-wrap: nowrap;
+	background:#000000bb;
+	outline:1.2px solid white;
+	color:yellow;
+	padding:3px;
+	position:absolute;
+	pointer-events:none;
+	user-select:none;
+}
+
+
+
+
+
+.active{
+	background:green !important;
+}
+.hide{
+	/*display:none;*/
+}
+
+
+
+
+
+[mousedescr]:hover,
+
+#ui:has(#m_timeline:hover) #p_timeline,
+#ui:has(#m_camera:hover) #p_camera,
+#ui:has(#m_timestamp:hover) #p_timestamp,
+#ui:has(#m_log:hover) #p_log,
+
+#p_timestamp tbody td:not(:nth-child(1)):hover,
+#p_timestamp tbody tr:has(td:nth-child(1):hover)
+{
+	background:#ffffff55;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+	width:11px;
+	height:11px;
+}
+::-webkit-scrollbar-corner{
+	background: #007700;
+}
+::-webkit-scrollbar-track{
+	background:#00770044;
+}
+::-webkit-scrollbar-thumb{
+	background:#00ff0066;
+}
+::-webkit-scrollbar-thumb:hover{
+	background:white;
+}

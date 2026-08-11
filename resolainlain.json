@@ -1,0 +1,167 @@
+{
+	"ani_uni": {
+		"type": "file_buffer",
+		"descriptor": {},
+		"data": "_tsv/ani_uni.tsv"
+	},
+	"ani_bone": {
+		"type": "file_buffer",
+		"descriptor": {},
+		"data": "_tsv/ani_bone.tsv"
+	},
+	"strip_bone": {
+		"type": "file_buffer",
+		"descriptor": {},
+		"dataASLI": "_tsv/strip_bone.tsv",
+		"data": "_tsv/nla.tsv"
+	},
+	"uni": {
+		"type": "gpu_buffer",
+		"descriptor": {
+			"size": 192,
+			"usage": 72,
+			"label": "this is _object uniform, size dihitung di web: wgsl offset computer"
+		},
+		"data": "data:,"
+	},
+	"uni_other_struct": {
+		"type": "object",
+		"descriptor": {},
+		"data": {
+			"cammat":["Float32Array",16,"REQUIREDDDDDD"]
+		}
+	},
+	"_uni_arahsinar": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 123
+	},
+	
+	
+	
+	
+	
+	
+	
+	"bgl0": {
+		"type": "gpu_bind_group_layout",
+		"descriptor": {
+			"label": "ini  bgl",
+			"entries": [
+				{
+					"binding": 0,
+					"visibility": 3,
+					"buffer": {
+						"type": "read-only-storage"
+					}
+				},
+				{
+					"binding": 1,
+					"visibility": 3,
+					"buffer": {
+						"type": "uniform"
+					}
+				}
+			]
+		}
+	},
+	"bind0": {
+		"type": "gpu_bind_group",
+		"descriptor": {
+			"entries": [
+				{
+					"binding": 0,
+					"resource": "_objectsto"
+				},
+				{
+					"binding": 1,
+					"resource": "uni"
+				}
+			],
+			"label": "ini bind ",
+			"layout": "bgl0"
+		}
+	},
+	"pl0": {
+		"type": "gpu_pipeline_layout",
+		"descriptor": {
+			"label": "ini  pl",
+			"bindGroupLayouts": [
+				"bgl0"
+			]
+		}
+	},
+	"wasmmem":{
+		"type": "wasm_memory",
+		"descriptor": {
+			"pages":1
+		},
+		"data": "data:,"
+	},
+	"enco0": {
+		"type": "gpu_command_encoder",
+		"descriptor": {
+			"label": "this is encoderrrrr"
+		}
+	},
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	"mesh rp": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": "mesh_rp1"
+	},
+	"mesh_rp0": {
+		"type": "gpu_begin_render_pass",
+		"descriptor": {
+			"label": "mesh renderPass",
+			"colorAttachments": [
+				{
+					"clearValue": [0.2, 0.2, 0.4, 1],
+					"loadOp": "clear",
+					"storeOp": "store",
+					"view": "(context)"
+				}
+			],
+			"depthStencilAttachment": {
+				"depthClearValue": 0,
+				"depthLoadOp": "clear",
+				"depthStoreOp": "store",
+				"view": "deptex"
+			}
+		}
+	},
+	"mesh_rp1": {
+		"type": "gpu_begin_render_pass",
+		"descriptor": {
+			"label": "mesh renderPass 1",
+			"colorAttachments": [
+				{
+					"clearValue": [0.0, 0.0, 0.0, 1],
+					"loadOp": "clear",
+					"storeOp": "store",
+					"view": "(context)"
+				}
+			],
+			"depthStencilAttachment": {
+				"depthClearValue": 0,
+				"depthLoadOp": "clear",
+				"depthStoreOp": "store",
+				"view": "deptex"
+			}
+		}
+	}
+}

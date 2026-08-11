@@ -1,0 +1,202 @@
+{
+	"act0_data": {
+		"type": "file_buffer",
+		"descriptor": {},
+		"data": "act0.bin"
+	},
+	"act0_info": {
+		"type": "object",
+		"descriptor": {},
+		"data": {
+			"info": {
+				"geser": {
+					"b0": [
+						0,
+						3
+					]
+				},
+				"lompat": {
+					"b1": [
+						3,
+						3
+					],
+					"b0": [
+						6,
+						5
+					]
+				},
+				"angin": {
+					"kain": [
+						11,
+						9
+					]
+				},
+				"tariletoy": {
+					"b_letoy": [
+						20,
+						3
+					],
+					"b_kaku": [
+						23,
+						2
+					],
+					"b_pojok": [
+						25,
+						2
+					]
+				},
+				"kotakkk": {
+					"b_terbang": [
+						27,
+						4
+					]
+				},
+				"letoytok": {
+					"b_letoy": [
+						31,
+						3
+					]
+				},
+				"semuanya": {
+					"b1": [
+						34,
+						4
+					],
+					"b0": [
+						38,
+						3
+					],
+					"b2": [
+						41,
+						2
+					],
+					"kain": [
+						43,
+						3
+					],
+					"b_nol": [
+						46,
+						3
+					],
+					"b_satuuu": [
+						49,
+						4
+					],
+					"b_letoy": [
+						53,
+						3
+					],
+					"b_pojok": [
+						56,
+						2
+					],
+					"b_kaku": [
+						58,
+						4
+					],
+					"b_terbang": [
+						62,
+						3
+					],
+					"b_badan": [
+						65,
+						1
+					],
+					"b_kepala": [
+						66,
+						1
+					],
+					"b_tanganatas L": [
+						67,
+						1
+					],
+					"b_tanganbawah L": [
+						68,
+						1
+					],
+					"b_tanganatas R": [
+						69,
+						1
+					],
+					"b_tanganbawah R": [
+						70,
+						1
+					],
+					"b_rok L": [
+						71,
+						1
+					],
+					"b_kakiatas L": [
+						72,
+						1
+					],
+					"b_kakibawah L": [
+						73,
+						1
+					],
+					"b_rok R": [
+						74,
+						1
+					],
+					"b_kakiatas R": [
+						75,
+						1
+					],
+					"b_kakibawah R": [
+						76,
+						1
+					],
+					"b_topi": [
+						77,
+						30
+					],
+					"b_bladecover": [
+						107,
+						1
+					],
+					"b_blade": [
+						108,
+						1
+					],
+					"cam0": [
+						109,
+						12
+					]
+				},
+				"geleng": {
+					"b_kepala": [
+						121,
+						5
+					],
+					"b_badan": [
+						126,
+						3
+					]
+				},
+				"wave": {
+					"b0": [
+						129,
+						1
+					],
+					"b1": [
+						130,
+						1
+					],
+					"b2": [
+						131,
+						1
+					],
+					"b3": [
+						132,
+						1
+					],
+					"b4": [
+						133,
+						1
+					]
+				}
+			},
+			"data": "act0_data"
+		}
+	}
+}

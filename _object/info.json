@@ -1,0 +1,2496 @@
+{
+	"chara0_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"cam_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 20
+	},
+	"stick_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 40
+	},
+	"wave_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 60
+	},
+	"bunga_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 80
+	},
+	"pecut_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 100
+	},
+	"tanah_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 120
+	},
+	"tank_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 140
+	},
+	"_objectv": {
+		"type": "gpu_buffer",
+		"descriptor": {
+			"size": 34304,
+			"usage": 40,
+			"label": "this is _object vertex"
+		},
+		"data": "vertex.bin"
+	},
+	"_objecti": {
+		"type": "gpu_buffer",
+		"descriptor": {
+			"size": 19572,
+			"usage": 24,
+			"label": "this is _object index"
+		},
+		"data": "index.bin"
+	},
+	"_objectind": {
+		"type": "gpu_buffer",
+		"descriptor": {
+			"size": 160,
+			"usage": 264,
+			"label": "this is _object indirect"
+		},
+		"data": "indirect.bin"
+	},
+	"_object_chara0_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 2,
+			"layout": {}
+		}
+	},
+	"_object_chara0_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"_object_chara0_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 22440
+	},
+	"chara0_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"_object_cam_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 1,
+			"layout": {}
+		}
+	},
+	"_object_cam_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"_object_cam_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"cam_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"_object_stick_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 200,
+			"layout": {}
+		}
+	},
+	"_object_stick_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 22440
+	},
+	"_object_stick_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 22536
+	},
+	"stick_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"_object_wave_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 1,
+			"layout": {}
+		}
+	},
+	"_object_wave_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"_object_wave_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"wave_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"_object_bunga_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 133,
+			"layout": {}
+		}
+	},
+	"_object_bunga_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 22536
+	},
+	"_object_bunga_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 23976
+	},
+	"bunga_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"_object_pecut_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 1,
+			"layout": {}
+		}
+	},
+	"_object_pecut_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"_object_pecut_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 0
+	},
+	"pecut_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"_object_tanah_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 1,
+			"layout": {}
+		}
+	},
+	"_object_tanah_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 23976
+	},
+	"_object_tanah_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 24024
+	},
+	"tanah_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"_object_tank_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 1,
+			"layout": {}
+		}
+	},
+	"_object_tank_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 24024
+	},
+	"_object_tank_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 34304
+	},
+	"tank_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
+	"chara0_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 2,
+			"layout": {
+				"root": "mat4x4f",
+				"b_badan": "mat4x4f",
+				"b_kepala": "mat4x4f",
+				"b_tanganatas L": "mat4x4f",
+				"b_tanganbawah L": "mat4x4f",
+				"b_tanganatas R": "mat4x4f",
+				"b_tanganbawah R": "mat4x4f",
+				"b_rok L": "mat4x4f",
+				"b_kakiatas L": "mat4x4f",
+				"b_kakibawah L": "mat4x4f",
+				"b_rok R": "mat4x4f",
+				"b_kakiatas R": "mat4x4f",
+				"b_kakibawah R": "mat4x4f",
+				"b_topi": "mat4x4f",
+				"b_bladecover": "mat4x4f",
+				"b_blade": "mat4x4f",
+				"au_stick": "mat4x4f"
+			}
+		}
+	},
+	"cam_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 2176,
+			"length": 1,
+			"layout": {
+				"cam0": "mat4x4f"
+			}
+		}
+	},
+	"stick_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 2240,
+			"length": 200,
+			"layout": {
+				"btimer": "mat4x4f"
+			}
+		}
+	},
+	"wave_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 15040,
+			"length": 1,
+			"layout": {
+				"b0": "mat4x4f",
+				"b1": "mat4x4f",
+				"b2": "mat4x4f",
+				"b3": "mat4x4f",
+				"b4": "mat4x4f"
+			}
+		}
+	},
+	"bunga_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 15360,
+			"length": 133,
+			"layout": {}
+		}
+	},
+	"pecut_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 15360,
+			"length": 1,
+			"layout": {
+				"b0": "mat4x4f",
+				"b1": "mat4x4f",
+				"b2": "mat4x4f",
+				"b3": "mat4x4f",
+				"b4": "mat4x4f",
+				"b5": "mat4x4f",
+				"b6": "mat4x4f",
+				"b7": "mat4x4f",
+				"b8": "mat4x4f",
+				"b9": "mat4x4f",
+				"b10": "mat4x4f",
+				"b11": "mat4x4f"
+			}
+		}
+	},
+	"tanah_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 16128,
+			"length": 1,
+			"layout": {}
+		}
+	},
+	"tank_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 16128,
+			"length": 1,
+			"layout": {
+				"b_hull": "mat4x4f",
+				"b_turret": "mat4x4f",
+				"b_barrel": "mat4x4f"
+			}
+		}
+	},
+	"_objectsto": {
+		"type": "gpu_buffer",
+		"descriptor": {
+			"size": 16320,
+			"usage": 136,
+			"label": "this is _object storage"
+		},
+		"data": "data:,"
+	},
+	"_object_chara0_parent": {
+		"type": "object",
+		"data": {
+			"root": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					0.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b_badan": {
+				"parent": "root",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					2.5,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-2.5,
+					-0.0,
+					1.0
+				]
+			},
+			"b_kepala": {
+				"parent": "b_badan",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					1.5,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-4.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b_tanganatas L": {
+				"parent": "b_badan",
+				"par_sp": [
+					0.0,
+					4.371138828673793e-08,
+					1.0,
+					0.0,
+					0.9999999403953552,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					-4.371138828673793e-08,
+					0.0,
+					0.5,
+					1.2999999523162842,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0000001192092896,
+					0.0,
+					-0.0,
+					4.371138828673793e-08,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					-0.0,
+					-4.371138828673793e-08,
+					-0.0,
+					-1.661032769106896e-07,
+					-0.5000000596046448,
+					-3.799999952316284,
+					1.0
+				]
+			},
+			"b_tanganbawah L": {
+				"parent": "b_tanganatas L",
+				"par_sp": [
+					1.0,
+					0.0,
+					-4.371138828673793e-08,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					4.371138828673793e-08,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					1.000000238418579,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0000001192092896,
+					0.0,
+					-0.0,
+					-0.0,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					-1.5000001192092896,
+					-3.799999952316284,
+					1.0
+				]
+			},
+			"b_tanganatas R": {
+				"parent": "b_badan",
+				"par_sp": [
+					4.263256414560601e-14,
+					-4.371138828673793e-08,
+					1.0,
+					0.0,
+					-0.9999999403953552,
+					2.3841850804728892e-07,
+					0.0,
+					0.0,
+					-2.3841852225814364e-07,
+					-1.0,
+					-4.371138828673793e-08,
+					0.0,
+					-0.5,
+					1.2999999523162842,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					-1.0421604544781898e-14,
+					-1.0000001192092896,
+					-2.3841852225814364e-07,
+					0.0,
+					-4.371138828673793e-08,
+					2.3841853646899835e-07,
+					-1.0,
+					0.0,
+					1.0,
+					5.3054172925552645e-14,
+					-4.371138828673793e-08,
+					-0.0,
+					1.661032769106896e-07,
+					-0.5000009536743164,
+					3.799999952316284,
+					1.0
+				]
+			},
+			"b_tanganbawah R": {
+				"parent": "b_tanganatas R",
+				"par_sp": [
+					1.0,
+					2.0843202313300217e-14,
+					-1.3113415775478643e-07,
+					0.0,
+					1.0421602850716003e-14,
+					1.0,
+					2.384184938364342e-07,
+					0.0,
+					1.3113415775478643e-07,
+					-2.384184938364342e-07,
+					1.0,
+					0.0,
+					1.5632406393656373e-14,
+					1.000000238418579,
+					1.1920920428565296e-07,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.2423523766852307e-21,
+					-1.0000001192092896,
+					-1.4210856409267898e-14,
+					-0.0,
+					8.74227694680485e-08,
+					4.263257092186959e-14,
+					-1.0,
+					0.0,
+					1.0,
+					5.3054172925552645e-14,
+					8.74227694680485e-08,
+					-0.0,
+					-3.322065538213792e-07,
+					-1.5000001192092896,
+					3.8000001907348633,
+					1.0
+				]
+			},
+			"b_rok L": {
+				"parent": "b_badan",
+				"par_sp": [
+					1.6292067073209182e-07,
+					-8.940700269022273e-08,
+					-1.0,
+					0.0,
+					-8.940700269022273e-08,
+					-0.9999999403953552,
+					8.940698847936801e-08,
+					0.0,
+					-1.0,
+					8.940698847936801e-08,
+					-1.6292068494294654e-07,
+					0.0,
+					0.30000001192092896,
+					-0.13449311256408691,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.6292067073209182e-07,
+					-8.940700979565008e-08,
+					-1.0,
+					-0.0,
+					-8.940700979565008e-08,
+					-1.0000001192092896,
+					8.940699558479537e-08,
+					0.0,
+					-1.0,
+					8.940699558479537e-08,
+					-1.6292068494294654e-07,
+					-0.0,
+					1.6261670054973365e-07,
+					2.365507125854492,
+					0.29999980330467224,
+					1.0
+				]
+			},
+			"b_kakiatas L": {
+				"parent": "b_rok L",
+				"par_sp": [
+					1.0,
+					-8.940698847936801e-08,
+					5.762046839663526e-08,
+					0.0,
+					8.940698847936801e-08,
+					1.0,
+					-3.552713678800501e-14,
+					0.0,
+					-5.76204612912079e-08,
+					4.032341680611923e-14,
+					1.0,
+					0.0,
+					2.842170943040401e-14,
+					0.9999998807907104,
+					-8.653037752992532e-08,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0530021654631128e-07,
+					-8.940696005765858e-08,
+					-1.0,
+					-0.0,
+					-9.414578085219574e-15,
+					-1.0000001192092896,
+					8.940696005765858e-08,
+					0.0,
+					-1.0,
+					6.750038167437989e-15,
+					-1.0530021654631128e-07,
+					-0.0,
+					5.7816915699504534e-08,
+					1.3655072450637817,
+					0.2999998927116394,
+					1.0
+				]
+			},
+			"b_kakibawah L": {
+				"parent": "b_kakiatas L",
+				"par_sp": [
+					-2.0168438926858497e-15,
+					1.0,
+					1.0530023075716599e-07,
+					0.0,
+					-1.0,
+					-4.235164736271502e-22,
+					-1.6551616965898575e-08,
+					0.0,
+					-1.6551616965898575e-08,
+					-1.0530025207344806e-07,
+					1.0,
+					0.0,
+					1.1711217289174253e-14,
+					1.1000001430511475,
+					-9.547111545771259e-08,
+					1.0
+				],
+				"arm_sp_inv": [
+					-1.9470719792025193e-07,
+					-8.87485995804127e-08,
+					-1.0,
+					-0.0,
+					-1.0000001192092896,
+					8.208703865025726e-15,
+					1.9470719792025193e-07,
+					0.0,
+					-2.5952109063235316e-15,
+					1.0,
+					-8.87485995804127e-08,
+					-0.0,
+					0.26550719141960144,
+					-6.27823908416758e-08,
+					0.2999999523162842,
+					1.0
+				]
+			},
+			"b_rok R": {
+				"parent": "b_badan",
+				"par_sp": [
+					1.6292067073209182e-07,
+					-8.940700269022273e-08,
+					-1.0,
+					0.0,
+					-8.940700269022273e-08,
+					-0.9999999403953552,
+					8.940698847936801e-08,
+					0.0,
+					-1.0,
+					8.940698847936801e-08,
+					-1.6292068494294654e-07,
+					0.0,
+					-0.30000001192092896,
+					-0.13449311256408691,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.6292067073209182e-07,
+					-8.940700979565008e-08,
+					-1.0,
+					-0.0,
+					-8.940700979565008e-08,
+					-1.0000001192092896,
+					8.940699558479537e-08,
+					0.0,
+					-1.0,
+					8.940699558479537e-08,
+					-1.6292068494294654e-07,
+					-0.0,
+					2.603691200420144e-07,
+					2.365507125854492,
+					-0.30000022053718567,
+					1.0
+				]
+			},
+			"b_kakiatas R": {
+				"parent": "b_rok R",
+				"par_sp": [
+					1.0,
+					-8.940698847936801e-08,
+					5.762046839663526e-08,
+					0.0,
+					8.940698847936801e-08,
+					1.0,
+					-3.552713678800501e-14,
+					0.0,
+					-5.76204612912079e-08,
+					4.032341680611923e-14,
+					1.0,
+					0.0,
+					4.263256414560601e-14,
+					0.9999998807907104,
+					-8.653037752992532e-08,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0530021654631128e-07,
+					-8.940696005765858e-08,
+					-1.0,
+					-0.0,
+					-9.414578085219574e-15,
+					-1.0000001192092896,
+					8.940696005765858e-08,
+					0.0,
+					-1.0,
+					6.750038167437989e-15,
+					-1.0530021654631128e-07,
+					-0.0,
+					1.209970434956631e-07,
+					1.3655072450637817,
+					-0.3000001311302185,
+					1.0
+				]
+			},
+			"b_kakibawah R": {
+				"parent": "b_kakiatas R",
+				"par_sp": [
+					-2.0168438926858497e-15,
+					1.0,
+					1.0530023075716599e-07,
+					0.0,
+					-1.0,
+					-4.235164736271502e-22,
+					-1.6551616965898575e-08,
+					0.0,
+					-1.6551616965898575e-08,
+					-1.0530025207344806e-07,
+					1.0,
+					0.0,
+					8.158503610373753e-15,
+					1.1000001430511475,
+					-9.547111545771259e-08,
+					1.0
+				],
+				"arm_sp_inv": [
+					-1.9470719792025193e-07,
+					-8.87485995804127e-08,
+					-1.0,
+					-0.0,
+					-1.0000001192092896,
+					8.208703865025726e-15,
+					1.9470719792025193e-07,
+					0.0,
+					-2.5952109063235316e-15,
+					1.0,
+					-8.87485995804127e-08,
+					-0.0,
+					0.2655070722103119,
+					-1.1603155769535078e-07,
+					-0.30000007152557373,
+					1.0
+				]
+			},
+			"b_topi": {
+				"parent": "b_badan",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					-2.5,
+					4.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					0.0,
+					-4.0,
+					1.0
+				]
+			},
+			"b_bladecover": {
+				"parent": "root",
+				"par_sp": [
+					0.0,
+					-1.0,
+					7.549790126404332e-08,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					7.549790126404332e-08,
+					1.0,
+					0.0,
+					3.0,
+					0.0,
+					-4.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-1.0,
+					0.0,
+					7.549790126404332e-08,
+					0.0,
+					7.549790126404332e-08,
+					-0.0,
+					1.0,
+					-0.0,
+					3.019916050561733e-07,
+					-3.0,
+					4.0,
+					1.0
+				]
+			},
+			"b_blade": {
+				"parent": "root",
+				"par_sp": [
+					0.0,
+					-1.0,
+					7.549790126404332e-08,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					7.549790126404332e-08,
+					1.0,
+					0.0,
+					3.0,
+					0.0,
+					-2.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-1.0,
+					0.0,
+					7.549790126404332e-08,
+					0.0,
+					7.549790126404332e-08,
+					-0.0,
+					1.0,
+					-0.0,
+					1.5099580252808664e-07,
+					-3.0,
+					2.0,
+					1.0
+				]
+			},
+			"au_stick": {
+				"parent": "root",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					0.0,
+					-0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"_object_cam_parent": {
+		"type": "object",
+		"data": {
+			"cam0": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					0.0,
+					-0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"_object_stick_parent": {
+		"type": "object",
+		"data": {
+			"btimer": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					0.0,
+					-0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"_object_wave_parent": {
+		"type": "object",
+		"data": {
+			"b0": {
+				"parent": null,
+				"par_sp": [
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					-50.0,
+					0.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0,
+					0.0,
+					-0.0,
+					-0.0,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					50.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b1": {
+				"parent": "b0",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					100.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0,
+					0.0,
+					-0.0,
+					-0.0,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					-50.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b2": {
+				"parent": "b1",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					100.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0,
+					0.0,
+					-0.0,
+					-0.0,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					-150.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b3": {
+				"parent": "b2",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					100.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0,
+					0.0,
+					-0.0,
+					-0.0,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					-250.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b4": {
+				"parent": "b3",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					100.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					0.0,
+					1.0,
+					0.0,
+					-0.0,
+					-0.0,
+					0.0,
+					1.0,
+					0.0,
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					-350.0,
+					-0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"_object_bunga_parent": {
+		"type": "object",
+		"data": {}
+	},
+	"_object_pecut_parent": {
+		"type": "object",
+		"data": {
+			"b0": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					0.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b1": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					12.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-12.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b2": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					24.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-24.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b3": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					36.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-36.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b4": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					48.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-48.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b5": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					60.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-60.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b6": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					72.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-72.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b7": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					84.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-84.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b8": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					96.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-96.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b9": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					108.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-108.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b10": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					120.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-120.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b11": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					132.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-132.0,
+					-0.0,
+					1.0
+				]
+			}
+		}
+	},
+	"_object_tanah_parent": {
+		"type": "object",
+		"data": {}
+	},
+	"_object_tank_parent": {
+		"type": "object",
+		"data": {
+			"b_hull": {
+				"parent": null,
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					0.0,
+					-0.0,
+					1.0
+				]
+			},
+			"b_turret": {
+				"parent": "b_hull",
+				"par_sp": [
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					0.0,
+					0.0,
+					1.0,
+					0.0,
+					0.0,
+					6.188246726989746,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					-0.0,
+					0.0,
+					-0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					0.0,
+					0.0,
+					-0.0,
+					1.0,
+					-0.0,
+					-0.0,
+					-6.188246726989746,
+					-0.0,
+					1.0
+				]
+			},
+			"b_barrel": {
+				"parent": "b_turret",
+				"par_sp": [
+					1.0,
+					-8.742277657347586e-08,
+					-2.220446049250313e-16,
+					0.0,
+					2.220446049250313e-16,
+					0.0,
+					1.0,
+					0.0,
+					-8.742277657347586e-08,
+					-1.0,
+					1.941175588570673e-23,
+					0.0,
+					0.0,
+					1.8374929428100586,
+					0.0,
+					1.0
+				],
+				"arm_sp_inv": [
+					1.0,
+					2.220446049250313e-16,
+					-8.742277657347586e-08,
+					-0.0,
+					-8.742277657347586e-08,
+					0.0,
+					-1.0,
+					0.0,
+					-2.220446049250313e-16,
+					1.0,
+					1.941175588570673e-23,
+					-0.0,
+					7.016324730102497e-07,
+					0.0,
+					8.025739669799805,
+					1.0
+				]
+			}
+		}
+	},
+	"chara0pipe": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini chara0 pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "chara0_vert",
+				"buffers": [
+					{
+						"arrayStride": 20,
+						"stepMode": "vertex",
+						"attributes": [
+							{
+								"_name": "joiwei",
+								"shaderLocation": 0,
+								"format": "sint32",
+								"offset": 0
+							},
+							{
+								"_name": "pos",
+								"shaderLocation": 1,
+								"format": "float32x3",
+								"offset": 4
+							},
+							{
+								"_name": "extra",
+								"shaderLocation": 2,
+								"format": "sint32",
+								"offset": 16
+							}
+						]
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "chara0_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"chara0pipe1_lainnnn": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini chara0 pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "chara0_vert",
+				"buffers": [
+					{
+						"arrayStride": 20,
+						"stepMode": "vertex",
+						"attributes": [
+							{
+								"_name": "joiwei",
+								"shaderLocation": 0,
+								"format": "sint32",
+								"offset": 0
+							},
+							{
+								"_name": "pos",
+								"shaderLocation": 1,
+								"format": "float32x3",
+								"offset": 4
+							},
+							{
+								"_name": "extra",
+								"shaderLocation": 2,
+								"format": "sint32",
+								"offset": 16
+							}
+						]
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "chara0_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "none",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"campipe": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini cam pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "cam_vert",
+				"buffers": [
+					{
+						"arrayStride": 0,
+						"stepMode": "vertex",
+						"attributes": []
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "cam_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"stickpipe": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini stick pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "stick_vert",
+				"buffers": [
+					{
+						"arrayStride": 12,
+						"stepMode": "vertex",
+						"attributes": [
+							{
+								"_name": "pos",
+								"shaderLocation": 0,
+								"format": "float32x3",
+								"offset": 0
+							}
+						]
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "stick_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"bungapipe": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini bunga pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "bunga_vert",
+				"buffers": [
+					{
+						"arrayStride": 12,
+						"stepMode": "vertex",
+						"attributes": [
+							{
+								"_name": "pos",
+								"shaderLocation": 0,
+								"format": "float32x3",
+								"offset": 0
+							}
+						]
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "bunga_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"tanahpipe": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini tanah pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "tanah_vert",
+				"buffers": [
+					{
+						"arrayStride": 12,
+						"stepMode": "vertex",
+						"attributes": [
+							{
+								"_name": "pos",
+								"shaderLocation": 0,
+								"format": "float32x3",
+								"offset": 0
+							}
+						]
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "tanah_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"tankpipe": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini tank pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "tank_vert",
+				"buffers": [
+					{
+						"arrayStride": 20,
+						"stepMode": "vertex",
+						"attributes": [
+							{
+								"_name": "jw",
+								"shaderLocation": 0,
+								"format": "sint32",
+								"offset": 0
+							},
+							{
+								"_name": "pos",
+								"shaderLocation": 1,
+								"format": "float32x3",
+								"offset": 4
+							},
+							{
+								"_name": "extra",
+								"shaderLocation": 2,
+								"format": "sint32",
+								"offset": 16
+							}
+						]
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "tank_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"mesh_info": {
+		"type": "file_buffer",
+		"descriptor": {},
+		"data": "mesh_info.tsv"
+	}
+}

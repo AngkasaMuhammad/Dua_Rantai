@@ -1,0 +1,203 @@
+[
+	[
+		{
+			"text": "\n'use strict'\n\n\nimport {\n\t_camsetup0,\n} from './coba0class.js'\n\n\nimport {\n\tlih,\n\tobjinfo,\n\tboneinfl,\n\tanimate,\n\tacaku,\n\tacakf,\n\ttsvToObj,\n\tset_action_info,\n\twrap,\n\tmodulo,\n\tanimate_wasm_globals,\n} from './coba0func.js'\n\n\nimport {\n\tmat4 as m4,\n\t//vec4 as v4,\n\tvec3 as v3,\n} from 'https://wgpu-matrix.org/dist/3.x/wgpu-matrix.module.js';\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nlet render\nlet audio\nlet meshrp\nlet inst_info\nlet uni_other\nlet cam\nlet env\nlet aucon_env\nlet ani_bone\nlet strip_bone\nlet ani_uni\nlet ani_uni_dict\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "155",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nexport let persp = m4.identity()\nlet cammic = m4.identity()\nlet decoder = new TextDecoder('utf-8')\n\nlet cam_mesh = ''\nlet inst_i = 0\nlet cam_bone = ''\nexport let set_cam_ani = (m,i,b,)=>{\n\tcam_mesh= m\n\tinst_i = i\n\tcam_bone = b\n}\n//https://chat.deepseek.com/share/ygwn8y19v04k967x9a\nconst getAvgAxisSize = m=>(\n\tMath.hypot(m[0],m[1],m[2])\n\t+Math.hypot(m[4],m[5],m[6])\n\t+Math.hypot(m[8],m[9],m[10])\n)/3\n\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "188",
+					"g": "88",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nexport let setallobjinfo = async (param_render,param_audio,)=>{\n",
+			"visible": true,
+			"time": "471599.7878658337",
+			"speed": "1",
+			"running": true,
+			"color": [
+				{
+					"r": "155",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				},
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": ".4"
+				},
+				{
+					"r": "255",
+					"g": "155",
+					"b": "255",
+					"frame": ".8"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\t\n\trender = param_render\n\taudio = param_audio\n\taudio.envad('aucon_env')\n\taudio.envauplay()\n\t\n\tlet mesh_info = await render.getreso('mesh_info')\n\tmesh_info = decoder.decode(mesh_info.buffer)\n\tmesh_info = tsvToObj(mesh_info,'name',)\n\t\n\tlet uni_other_struct = await render.getreso('uni_other_struct')\n\tlet allobjinfo = await objinfo(\n\t\trender,\n\t\tmesh_info,\n\t\t'wasmmem',\n\t\tuni_other_struct,\n/*========\n\t\t{//uni_other\n\t\t\t'cammat'\t:[Float32Array\t,16\t,],\n\t\t\t'wb'\t:[Float32Array\t,4\t,],\n\t\t\t'ws'\t:[Float32Array\t,4\t,],\n\t\t\t'extra'\t:[Uint8Array\t,4\t,], //arahsinar pad pad pad\n\t\t},\n--------*/\n\t)\n\t;({\n\t\tinst_info,\n\t\tuni_other,\n\t} = lih(allobjinfo))\n\t\n\t\n\tani_bone = await render.getreso('ani_bone')\n\tani_bone = decoder.decode(ani_bone.buffer)\n\tani_bone = tsvToObj(ani_bone,null,)\n\t\n\tstrip_bone = await render.getreso('strip_bone')\n\tstrip_bone = decoder.decode(strip_bone.buffer)\n\tstrip_bone = tsvToObj(strip_bone,null,)\n\tlet acinedited = [] //action info edited\n\tfor(let strip of strip_bone){\n\t\tlet acin = await render.getreso(strip.action_info)\n\t\tif(!(acinedited.includes(acin))){\n\t\t\tset_action_info(render,acin,)\n\t\t\tacinedited.push(acin)\n\t\t}\n\t\tstrip.action_info = acin\n\t\tstrip.trimstart = +strip.trimstart\n\t\tstrip.trimend = +strip.trimend\n\t\tstrip.scale = +strip.scale\n\t\tstrip.start = +strip.start\n\t\tstrip.end = +strip.end\n\t}\n\tlih(strip_bone)\n\t\n\tlet ani_uni = await render.getreso('ani_uni')\n\tani_uni = decoder.decode(ani_uni.buffer)\n\tani_uni = tsvToObj(ani_uni,null,)\n\tani_uni_dict = {}\n\tfor(let {\n\t\tvalue,\n\t\ttime,\n\t\twasm_dst,\n\t} of ani_uni){\n\t\tlet glo = await render.getreso(wasm_dst)\n\t\tlet aum = null\n\t\tif(!(wasm_dst in ani_uni_dict)){\n\t\t\tani_uni_dict[wasm_dst] = {\n\t\t\t\tglo,\n\t\t\t\tframearr:[],\n\t\t\t}\n\t\t}\n\t\tani_uni_dict[wasm_dst].framearr.push([+time,value,])\n\t}\n\t\n\t//urutkan\n\tfor(let wasm_dst in ani_uni_dict){\n\t\tani_uni_dict[wasm_dst]\n\t\t.framearr\n\t\t.sort( (a,b,)=>a[0]-b[0] )\n\t}\n\tlih(ani_uni_dict)\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\t\n\tmeshrp = await render.getreso('mesh rp') //\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "0",
+					"g": "222",
+					"b": "0",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\ncam = _camsetup0.activecam = new _camsetup0(uni_other.cammat,cammic,)\naucon_env = await render.getreso('aucon_env')\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "155",
+					"b": "155",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "\n\treturn {\n\t\tallobjinfo,\n\t\tf_art,\n\t}\n\t\n\t\n}\n",
+			"visible": true,
+			"time": "471441.40041899425",
+			"speed": "1",
+			"running": true,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				},
+				{
+					"r": "255",
+					"g": "155",
+					"b": "255",
+					"frame": ".4"
+				},
+				{
+					"r": "155",
+					"g": "255",
+					"b": "255",
+					"frame": ".8"
+				}
+			]
+		}
+	],
+	[
+		{
+			"text": "\nlet f_art = t=>{\n\t//pake env time\n\tt = audio.envaugetTime()*1000\n\t\n\t\n\t//bone\n\tlet trackdict = {}\n\t\n\t//strip_bone\n\tfor(let {\n\t\taction_info,\n\t\tslot,\n\t\ttrimstart,\n\t\ttrimend,\n\t\tscale,\n\t\tstart,\n\t\tend,\n\t\ttrack,\n\t} of strip_bone){\n\t\tif(\n\t\t\tt < start ||\n\t\t\tend < t ||\n\t\t\ttrack in trackdict\n\t\t){continue}\n\t\t\n\t\tlet t1 = t\n\t\tt1 -= start\n\t\tt1 /= scale //sampe sini, scale bikin salah mulai frame\n\t\tt1 += trimstart\n\t\tt1 = wrap(trimstart,t1,trimend,)\n\t\t\n\t\ttrackdict[track] = animate(\n\t\t\taction_info,\n\t\t\tslot,\n\t\t\tt1,\n\t\t)\n\t}\n\tlet anirepbone = {} //mesh->instance->replaced bones\n\tfor(let {\n\t\ttrack,\n\t\tmesh,\n\t\tinstance_index,\n\t} of ani_bone){\n\t\tlet track1 = trackdict[track]\n\t\tfor(let track_b in track1){\n\t\t\tlet inst = anirepbone\n\t\t\tinst = (inst[mesh] ??= {})\n\t\t\tinst = (inst[instance_index] ??= {})\n\t\t\tif(inst_info[mesh].parlay.has(track_b)){\n\t\t\t\tinst[track_b] ??= track1[track_b]\n\t\t\t}\n\t\t}\n\t}\n\tfor(let mesh in anirepbone){\n\t\tlet mesh1 = anirepbone[mesh]\n\t\tfor(let inst in mesh1){\n\t\t\tlet inst1 = mesh1[inst]\n\t\t\tboneinfl(\n\t\t\t\tinst1,\n\t\t\t\tinst_info[mesh].parlay,\n\t\t\t\t+inst,\n\t\t\t\tinst_info[mesh].stost,\n\t\t\t)\n\t\t}\n\t}\n\t\n\t\n\t\n\t//camera\n\tif(document.querySelector('#p_camera .active')){\n\t\tcam.fcam(persp)\n\t}else{\n\t\t//m4.invert( inst_info[cam_mesh].stost[inst_i][cam_bone] ,uni_other.cammat ,)\n\t\tlet cammat1 = uni_other.cammat\n\t\tif(!cammat1.some(Number.isNaN)){\n\t\t\tlet b1 = inst_info[cam_mesh].stost[inst_i][cam_bone]\n\t\t\tlet inv1 = inst_info[cam_mesh].parlay.get(cam_bone).arm_sp_inv\n\t\t\t\n\t\t\tm4.invert( inv1, cammat1,) //arm_sp\n\t\t\tm4.mul(b1,cammat1,cammat1,)\n\t\t\tm4.invert(cammat1 ,cammat1 ,)\n\t\t\tm4.copy(cammat1,cammic,)\n\t\t\t\n\t\t\tm4.mul( persp ,cammat1 ,cammat1 ,)\n\t\t}\n\t}\n\t\n\t\n\t\n\n\n\n\n\n\n\n\n\n\t//ANIMASI SEMENTARA\n\t//.tsv untuk: (global & value) render pass, pipe, uniform\n\tanimate_wasm_globals(ani_uni_dict,t,)\n\t\n\t//sampe sini, animasi uniform\n\t\n\t\n\t//envaudio\n\t//matrix animasi, masih lokal, posisi suara geser\n\tfor(let i in aucon_env){\n\t\tlet {mesh,instance_index,bone,} = aucon_env[i]\n\t\tlet b = inst_info[mesh].stost[instance_index][bone] //final \n\t\tlet cam1 = m4.invert(inst_info[mesh].parlay.get(bone).arm_sp_inv)\n\t\tm4.mul(b,cam1,cam1,) //sebelum dikali arm_sp_inv\n\t\tlet pos = m4.getTranslation(cam1)\n\t\tlet radius = getAvgAxisSize(cam1)\n\t\t\n\t\tv3.transformMat4(pos,cammic,pos,)\n\t\taudio.envsetpos(\n\t\t\t...pos,\n\t\t\tradius,\n\t\t\t+i,\n\t\t)\n\t}\n\t\n\n\n\n/*========\n\t//instanced vertex\n\tfor(let inst of inst_info.Cube.ivst){\n\t\t//inst.coba_inst_warna.set([0,222,0,222,])\n\t\tinst.coba_inst_warna.set([\n\t\t\tacaku(256),\n\t\t\tacaku(256),\n\t\t\tacaku(256),\n\t\t\tacaku(256),\n\t\t])\n\t\t//inst.coba_inst_xyz.set([-.5,.5,.5,])\n\t\tinst.coba_inst_xyz.set([\n\t\t\tacakf(.01),\n\t\t\tacakf(.01),\n\t\t\tacakf(.01),\n\t\t])\n\t\t\n\t}\n\tfor(let inst of inst_info.donat.ivst){\n\t\tinst.xyz.set([\n\t\t\tacakf(.01),\n\t\t\tacakf(.01),\n\t\t\tacakf(.01),\n\t\t])\n\t}\n\t\n\t\n\t//warna sinar\n\tuni_other.ws.set([1.,1.,1.,1.,])\n\t\n\t\n\t//arahsinar pad pad pad\n\tuni_other.extra[0] = 222 // +Math.round(t*.008)\n\t\n--------*/\n\t\n\t\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "122",
+					"g": "222",
+					"b": "222",
+					"frame": "0"
+				}
+			]
+		}
+	]
+]

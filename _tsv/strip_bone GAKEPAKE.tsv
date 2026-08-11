@@ -1,0 +1,9 @@
+action_info	slot	trimstart	trimend	scale	start	end	track	commmennttt
+act1_info	chara0	0	99999	1.	0	55555	tr_chara0	chara0 root
+act1_info	chara0walk0	0	1000	1.	0	1000	tr1_chara0	jalan
+act1_info	chara0walk0	0	99999	1.	1000	99999	tr1_chara0	jalan & putar
+act1_info	timer	0	99999	1.	0	99999	tr_timer	timer, (x = stick, y&z = kosonggg)
+act0_info	semuanya	-1244	6666	-2.	-4444	3333	track0	
+act0_info	semuanya	-1244	17777	.408	12222	44444	track0	pada time tertentu, track ini tidak tampil karena tertimpa track atasnya
+act0_info	semuanya	2444	3999	.001	-11111	55555	track0	pada time tertentu, track ini tidak tampil karena tertimpa track atasnya
+act0_info	wave	-11111	2222	1.	-55555	99999	track_wave	

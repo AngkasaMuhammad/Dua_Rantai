@@ -1,0 +1,51 @@
+{
+	"cubepipe0": {
+		"type": "gpu_render_pipeeeeee",
+		"descriptor": {
+			"label": "ini cube pipeeeeeeeee"	,
+			"vertex": {
+				"module": "mod"	,
+				"entryPoint": "cube_vert"	,
+				"buffers":"Cube"
+			},
+			"fragment": {
+				"module": "mod"	,
+				"entryPoint": "cube_frag"	,
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"chara0pipe"	: {"type": "gpu_render_pipe"	,"descriptor": {"label": "ini chara0 pipaaa"	,"vertex": {"module": "mod"	,"entryPoint": "chara0_vert"	,"buffers":"chara0"	},"fragment": {"module": "mod"	,"entryPoint": "chara0_frag"	,"targets": [{"format": "(preferred_canvas_format)","blend": {"alpha": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "one"},"color": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "src-alpha"}}}]},"depthStencil": {"depthCompare": "greater","depthWriteEnabled": true,"format": "depth24plus"},"layout": "pl0","primitive": {"cullMode": "back","topology": "triangle-list"}}},
+	"chara0pipe1_lainnnn"	: {"type": "gpu_render_pipe"	,"descriptor": {"label": "ini chara0 pipaaa"	,"vertex": {"module": "mod"	,"entryPoint": "chara0_vert"	,"buffers":"chara0"	},"fragment": {"module": "mod"	,"entryPoint": "chara0_frag"	,"targets": [{"format": "(preferred_canvas_format)","blend": {"alpha": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "one"},"color": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "src-alpha"}}}]},"depthStencil": {"depthCompare": "greater","depthWriteEnabled": true,"format": "depth24plus"},"layout": "pl0","primitive": {"cullMode": "none","topology": "triangle-list"}}},
+	"campipe"	: {"type": "gpu_render_pipe"	,"descriptor": {"label": "ini cam pipaaa"	,"vertex": {"module": "mod"	,"entryPoint": "cam_vert"	,"buffers":"cam"	},"fragment": {"module": "mod"	,"entryPoint": "cam_frag"	,"targets": [{"format": "(preferred_canvas_format)","blend": {"alpha": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "one"},"color": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "src-alpha"}}}]},"depthStencil": {"depthCompare": "greater","depthWriteEnabled": true,"format": "depth24plus"},"layout": "pl0","primitive": {"cullMode": "back","topology": "triangle-list"}}},
+	"stickpipe"	: {"type": "gpu_render_pipe"	,"descriptor": {"label": "ini stick pipaaa"	,"vertex": {"module": "mod"	,"entryPoint": "stick_vert"	,"buffers":"stick"	},"fragment": {"module": "mod"	,"entryPoint": "stick_frag"	,"targets": [{"format": "(preferred_canvas_format)","blend": {"alpha": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "one"},"color": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "src-alpha"}}}]},"depthStencil": {"depthCompare": "greater","depthWriteEnabled": true,"format": "depth24plus"},"layout": "pl0","primitive": {"cullMode": "back","topology": "triangle-list"}}},
+	"bungapipe"	: {"type": "gpu_render_pipe"	,"descriptor": {"label": "ini bunga pipaaa"	,"vertex": {"module": "mod"	,"entryPoint": "bunga_vert"	,"buffers":"bunga"	},"fragment": {"module": "mod"	,"entryPoint": "bunga_frag"	,"targets": [{"format": "(preferred_canvas_format)","blend": {"alpha": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "one"},"color": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "src-alpha"}}}]},"depthStencil": {"depthCompare": "greater","depthWriteEnabled": true,"format": "depth24plus"},"layout": "pl0","primitive": {"cullMode": "back","topology": "triangle-list"}}},
+	"tanahpipe"	: {"type": "gpu_render_pipe"	,"descriptor": {"label": "ini tanah pipaaa"	,"vertex": {"module": "mod"	,"entryPoint": "tanah_vert"	,"buffers":"tanah"	},"fragment": {"module": "mod"	,"entryPoint": "tanah_frag"	,"targets": [{"format": "(preferred_canvas_format)","blend": {"alpha": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "one"},"color": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "src-alpha"}}}]},"depthStencil": {"depthCompare": "greater","depthWriteEnabled": true,"format": "depth24plus"},"layout": "pl0","primitive": {"cullMode": "back","topology": "triangle-list"}}},
+	"tankpipe"	: {"type": "gpu_render_pipe"	,"descriptor": {"label": "ini tank pipaaa"	,"vertex": {"module": "mod"	,"entryPoint": "tank_vert"	,"buffers":"tank"	},"fragment": {"module": "mod"	,"entryPoint": "tank_frag"	,"targets": [{"format": "(preferred_canvas_format)","blend": {"alpha": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "one"},"color": {"dstFactor": "one-minus-src-alpha","operation": "add","srcFactor": "src-alpha"}}}]},"depthStencil": {"depthCompare": "greater","depthWriteEnabled": true,"format": "depth24plus"},"layout": "pl0","primitive": {"cullMode": "back","topology": "triangle-list"}}}
+}
