@@ -18,7 +18,8 @@ V		-ani_uni.tsv
 V		-pipe & renderpass ,data animasi nya disimpan di .tsv
 		-wgsl switch case
 V		-audio pos
->>>		-bone au_stick ketinggalan di bawah, saat takeoff
+V		-bone au_stick ketinggalan di bawah, saat takeoff
+>>>		-animate slepet
 V	-ADA ERROR _aucon, garagara time negative
 V	-bikin NLA exporter
 V		-bikin if, checkbox [object nla, track, strip,] true untuk export

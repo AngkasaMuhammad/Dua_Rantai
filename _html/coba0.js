@@ -2,8 +2,8 @@
 "use strict"
 
 
-//import {main} from 'https://angkasamuhammad.github.io/Poly-Landhep-5/js/PL5_1.js'
-import {main} from 'http://127.0.0.1:8080/cobafolder/WebGPU/Poly-Landhep-5/js/PL5_1.js'
+import {main} from 'https://angkasamuhammad.github.io/Poly-Landhep-5/js/PL5_1.js'
+//import {main} from 'http://127.0.0.1:8080/cobafolder/WebGPU/Poly-Landhep-5/js/PL5_1.js'
 
 import {
 	mat4 as m4,
