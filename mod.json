@@ -1,7 +1,7 @@
 [
 	[
 		{
-			"text": "\n/*\n\nsemua @vertex harus ada @builtin(instance_index)\n\n*/\n\nstruct objso{\n\tstride:u32,\n\toffset:u32,\n}\n\nstruct stuni{\n\t\n\tchara0:objso,\n\tcam1:objso,\n\tstick:objso,\n\twave:objso,\n\tbunga:objso,\n\tpecut:objso,\n\ttanah:objso,\n\ttank:objso,\n//-=-=-=-=-=-=-=-=-\n\tcam:mat4x4f,\n\twb:vec4f, //warna bayangan\n\tws:vec4f, //warna sinar\n\textra:i32, //arahsinar pad pad pad\n\tt:i32, //time\n\tdt:i32, //delta time\n\tenv_t:i32, //environment time\n\tenv_dt:i32, //environment delta time\n\t\n}\n\n@group(0) @binding(0) var<storage> bones:array<mat4x4f>;\n@group(0) @binding(1) var<uniform> uni:stuni;\n",
+			"text": "\n/*\n\nsemua @vertex harus ada @builtin(instance_index)\n\n*/\n\nstruct objso{\n\tstride:u32,\n\toffset:u32,\n}\n\nstruct stuni{\n\t\n\tchara0:objso,\n\tcam1:objso,\n\tstick:objso,\n\twave:objso,\n\tbunga:objso,\n\tpecut:objso,\n\ttanah:objso,\n\ttank:objso,\n\tsplash0:objso,\n\t//:objso,\n//-=-=-=-=-=-=-=-=-\n\tcam:mat4x4f,\n\twb:vec4f, //warna bayangan\n\tws:vec4f, //warna sinar\n\textra:i32, //arahsinar pad pad pad\n\tt:i32, //time\n\tdt:i32, //delta time\n\tenv_t:i32, //environment time\n\tenv_dt:i32, //environment delta time\n\t\n}\n\n@group(0) @binding(0) var<storage> bones:array<mat4x4f>;\n@group(0) @binding(1) var<uniform> uni:stuni;\n",
 			"visible": true,
 			"time": "0",
 			"speed": "1",
@@ -480,6 +480,68 @@
 	],
 	[
 		{
+			"text": "",
+			"visible": false,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\n@vertex fn splash0_vert(\n\t\n\t@location(0) posv:vec3f,\n\t\n\t@builtin(vertex_index) vi:u32,\n\t@builtin(instance_index) ii:u32,\n)-> splash0_out {\n\t\n\tvar p1 = vec4f(posv,1.,);\n\tp1.y = acakbit3(f32(vi));\n\t\n\treturn splash0_out(\n\t\tuni.cam*p1,\n\t);\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nstruct splash0_out{\n\t@builtin(position) posout:vec4f,\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\n@fragment fn splash0_frag(\n\to:splash0_out,\n)-> @location(0) vec4f {\n\treturn vec4f(1.15,.1,1.05,1.,);\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		}
+	],
+	[
+		{
 			"text": "\n/*\n\n\n\n\n\n\n\n\n\n\n*/\n",
 			"visible": true,
 			"time": "0",
@@ -754,7 +816,7 @@
 		{
 			"text": "\n//+++++++++++++++++++++++ganjel scroll++++++++++++++++++++\n",
 			"visible": true,
-			"time": "7365334.011427989",
+			"time": "7441852.056431605",
 			"speed": "5.0000000000000036",
 			"running": true,
 			"color": [

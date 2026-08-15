@@ -63,10 +63,18 @@
 		},
 		"data": 140
 	},
+	"splash0_indroff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 160
+	},
 	"_objectv": {
 		"type": "gpu_buffer",
 		"descriptor": {
-			"size": 34304,
+			"size": 36236,
 			"usage": 40,
 			"label": "this is _object vertex"
 		},
@@ -75,7 +83,7 @@
 	"_objecti": {
 		"type": "gpu_buffer",
 		"descriptor": {
-			"size": 19572,
+			"size": 21300,
 			"usage": 24,
 			"label": "this is _object index"
 		},
@@ -84,7 +92,7 @@
 	"_objectind": {
 		"type": "gpu_buffer",
 		"descriptor": {
-			"size": 160,
+			"size": 180,
 			"usage": 264,
 			"label": "this is _object indirect"
 		},
@@ -354,6 +362,39 @@
 		},
 		"data": ""
 	},
+	"_object_splash0_instancedVertexStruct": {
+		"type": "vertex_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 0,
+			"length": 17,
+			"layout": {}
+		}
+	},
+	"_object_splash0_voff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 34304
+	},
+	"_object_splash0_instoff": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "i32",
+			"mutable": true
+		},
+		"data": 36236
+	},
+	"splash0_pipe": {
+		"type": "wasm_global",
+		"descriptor": {
+			"globaltype": "externref",
+			"mutable": true
+		},
+		"data": ""
+	},
 	"chara0_storageStruct": {
 		"type": "storage_struct",
 		"descriptor": {
@@ -469,6 +510,15 @@
 				"b_turret": "mat4x4f",
 				"b_barrel": "mat4x4f"
 			}
+		}
+	},
+	"splash0_storageStruct": {
+		"type": "storage_struct",
+		"descriptor": {
+			"array": "wasmmem",
+			"offset": 16320,
+			"length": 17,
+			"layout": {}
 		}
 	},
 	"_objectsto": {
@@ -2039,6 +2089,10 @@
 			}
 		}
 	},
+	"_object_splash0_parent": {
+		"type": "object",
+		"data": {}
+	},
 	"chara0pipe": {
 		"type": "gpu_render_pipe",
 		"descriptor": {
@@ -2458,6 +2512,66 @@
 			"fragment": {
 				"module": "mod",
 				"entryPoint": "tank_frag",
+				"targets": [
+					{
+						"format": "(preferred_canvas_format)",
+						"blend": {
+							"alpha": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "one"
+							},
+							"color": {
+								"dstFactor": "one-minus-src-alpha",
+								"operation": "add",
+								"srcFactor": "src-alpha"
+							}
+						}
+					}
+				]
+			},
+			"depthStencil": {
+				"depthCompare": "greater",
+				"depthWriteEnabled": true,
+				"format": "depth24plus"
+			},
+			"layout": "pl0",
+			"primitive": {
+				"cullMode": "back",
+				"topology": "triangle-list"
+			}
+		}
+	},
+	"splash0pipe": {
+		"type": "gpu_render_pipe",
+		"descriptor": {
+			"label": "ini splash0 pipaaa",
+			"vertex": {
+				"module": "mod",
+				"entryPoint": "splash0_vert",
+				"buffers": [
+					{
+						"arrayStride": 12,
+						"stepMode": "vertex",
+						"attributes": [
+							{
+								"_name": "pos",
+								"shaderLocation": 0,
+								"format": "float32x3",
+								"offset": 0
+							}
+						]
+					},
+					{
+						"arrayStride": 0,
+						"stepMode": "instance",
+						"attributes": []
+					}
+				]
+			},
+			"fragment": {
+				"module": "mod",
+				"entryPoint": "splash0_frag",
 				"targets": [
 					{
 						"format": "(preferred_canvas_format)",

@@ -3,7 +3,7 @@
 		{
 			"text": "\n(module\n\t\n\t;;warna Language: Notepad++ ==>> Ada\n\t;;(global $str (import \"myStrings\" \"\") externref)\n",
 			"visible": true,
-			"time": "12265610.066434294",
+			"time": "12352304.523084674",
 			"speed": "7.981981981981975",
 			"running": true,
 			"color": [
@@ -99,9 +99,9 @@
 			]
 		},
 		{
-			"text": "\n\t;;(global $str (import \"myStrings\" \"\") externref)\n\n\n;;(global $strsamplerbind (import \"myStrings\" \"samplerbind\") externref)\n\t\n\t;;enco0\n\t(global $strenco0 (import \"myStrings\" \"enco0\") externref)\n\t\t(global $strmeshrp (import \"global\" \"mesh rp\") (mut externref))\n\t\t(global $strobjv (import \"myStrings\" \"_objectv\") externref)\n\t\t(global $strobji (import \"myStrings\" \"_objecti\") externref)\n\t\t(global $strobjind (import \"myStrings\" \"_objectind\") externref)\n\t\t(global $strbind0 (import \"myStrings\" \"bind0\") externref)\n\t\t(global $strsto (import \"myStrings\" \"_objectsto\") externref)\n\t\t(global $struni (import \"myStrings\" \"uni\") externref)\n\t\t\t\n\t\t;;chara\n\t\t(global $strchara0pipe (import \"global\" \"chara0_pipe\") (mut externref))\n\t\t(global $chara0voff (import \"global\" \"_object_chara0_voff\") (mut i32))\n\t\t(global $chara0instoff (import \"global\" \"_object_chara0_instoff\") (mut i32))\n\t\t(global $chara0indroff (import \"global\" \"chara0_indroff\") (mut i32))\n\t\t\t\n\t\t;;cam\n\t\t(global $strcampipe (import \"global\" \"cam_pipe\") (mut externref))\n\t\t(global $camvoff (import \"global\" \"_object_cam_voff\") (mut i32))\n\t\t(global $caminstoff (import \"global\" \"_object_cam_instoff\") (mut i32))\n\t\t(global $camindroff (import \"global\" \"cam_indroff\") (mut i32))\n\t\t\t\n\t\t;;stick\n\t\t(global $strstickpipe (import \"global\" \"stick_pipe\") (mut externref))\n\t\t(global $stickvoff (import \"global\" \"_object_stick_voff\") (mut i32))\n\t\t(global $stickinstoff (import \"global\" \"_object_stick_instoff\") (mut i32))\n\t\t(global $stickindroff (import \"global\" \"stick_indroff\") (mut i32))\n\t\t\t\n\t\t;;wave\n\t\t(global $strwavepipe (import \"global\" \"wave_pipe\") (mut externref))\n\t\t(global $wavevoff (import \"global\" \"_object_wave_voff\") (mut i32))\n\t\t(global $waveinstoff (import \"global\" \"_object_wave_instoff\") (mut i32))\n\t\t(global $waveindroff (import \"global\" \"wave_indroff\") (mut i32))\n\t\t\t\n\t\t;;bunga\n\t\t(global $strbungapipe (import \"global\" \"bunga_pipe\") (mut externref))\n\t\t(global $bungavoff (import \"global\" \"_object_bunga_voff\") (mut i32))\n\t\t(global $bungainstoff (import \"global\" \"_object_bunga_instoff\") (mut i32))\n\t\t(global $bungaindroff (import \"global\" \"bunga_indroff\") (mut i32))\n\t\t\t\n\t\t;;pecut\n\t\t(global $strpecutpipe (import \"global\" \"pecut_pipe\") (mut externref))\n\t\t(global $pecutvoff (import \"global\" \"_object_pecut_voff\") (mut i32))\n\t\t(global $pecutinstoff (import \"global\" \"_object_pecut_instoff\") (mut i32))\n\t\t(global $pecutindroff (import \"global\" \"pecut_indroff\") (mut i32))\n\t\t\t\n\t\t;;tanah\n\t\t(global $strtanahpipe (import \"global\" \"tanah_pipe\") (mut externref))\n\t\t(global $tanahvoff (import \"global\" \"_object_tanah_voff\") (mut i32))\n\t\t(global $tanahinstoff (import \"global\" \"_object_tanah_instoff\") (mut i32))\n\t\t(global $tanahindroff (import \"global\" \"tanah_indroff\") (mut i32))\n\t\t\t\n\t\t;;tank\n\t\t(global $strtankpipe (import \"global\" \"tank_pipe\") (mut externref))\n\t\t(global $tankvoff (import \"global\" \"_object_tank_voff\") (mut i32))\n\t\t(global $tankinstoff (import \"global\" \"_object_tank_instoff\") (mut i32))\n\t\t(global $tankindroff (import \"global\" \"tank_indroff\") (mut i32))\n\n",
+			"text": "\n\t;;(global $str (import \"myStrings\" \"\") externref)\n\n\n;;(global $strsamplerbind (import \"myStrings\" \"samplerbind\") externref)\n\t\n\t;;enco0\n\t(global $strenco0 (import \"myStrings\" \"enco0\") externref)\n\t\t(global $strmeshrp (import \"global\" \"mesh rp\") (mut externref))\n\t\t(global $strobjv (import \"myStrings\" \"_objectv\") externref)\n\t\t(global $strobji (import \"myStrings\" \"_objecti\") externref)\n\t\t(global $strobjind (import \"myStrings\" \"_objectind\") externref)\n\t\t(global $strbind0 (import \"myStrings\" \"bind0\") externref)\n\t\t(global $strsto (import \"myStrings\" \"_objectsto\") externref)\n\t\t(global $struni (import \"myStrings\" \"uni\") externref)\n\t\t\t\n\t\t;;chara\n\t\t(global $strchara0pipe (import \"global\" \"chara0_pipe\") (mut externref))\n\t\t(global $chara0voff (import \"global\" \"_object_chara0_voff\") (mut i32))\n\t\t(global $chara0instoff (import \"global\" \"_object_chara0_instoff\") (mut i32))\n\t\t(global $chara0indroff (import \"global\" \"chara0_indroff\") (mut i32))\n\t\t\t\n\t\t;;cam\n\t\t(global $strcampipe (import \"global\" \"cam_pipe\") (mut externref))\n\t\t(global $camvoff (import \"global\" \"_object_cam_voff\") (mut i32))\n\t\t(global $caminstoff (import \"global\" \"_object_cam_instoff\") (mut i32))\n\t\t(global $camindroff (import \"global\" \"cam_indroff\") (mut i32))\n\t\t\t\n\t\t;;stick\n\t\t(global $strstickpipe (import \"global\" \"stick_pipe\") (mut externref))\n\t\t(global $stickvoff (import \"global\" \"_object_stick_voff\") (mut i32))\n\t\t(global $stickinstoff (import \"global\" \"_object_stick_instoff\") (mut i32))\n\t\t(global $stickindroff (import \"global\" \"stick_indroff\") (mut i32))\n\t\t\t\n\t\t;;wave\n\t\t(global $strwavepipe (import \"global\" \"wave_pipe\") (mut externref))\n\t\t(global $wavevoff (import \"global\" \"_object_wave_voff\") (mut i32))\n\t\t(global $waveinstoff (import \"global\" \"_object_wave_instoff\") (mut i32))\n\t\t(global $waveindroff (import \"global\" \"wave_indroff\") (mut i32))\n\t\t\t\n\t\t;;bunga\n\t\t(global $strbungapipe (import \"global\" \"bunga_pipe\") (mut externref))\n\t\t(global $bungavoff (import \"global\" \"_object_bunga_voff\") (mut i32))\n\t\t(global $bungainstoff (import \"global\" \"_object_bunga_instoff\") (mut i32))\n\t\t(global $bungaindroff (import \"global\" \"bunga_indroff\") (mut i32))\n\t\t\t\n\t\t;;pecut\n\t\t(global $strpecutpipe (import \"global\" \"pecut_pipe\") (mut externref))\n\t\t(global $pecutvoff (import \"global\" \"_object_pecut_voff\") (mut i32))\n\t\t(global $pecutinstoff (import \"global\" \"_object_pecut_instoff\") (mut i32))\n\t\t(global $pecutindroff (import \"global\" \"pecut_indroff\") (mut i32))\n\t\t\t\n\t\t;;tanah\n\t\t(global $strtanahpipe (import \"global\" \"tanah_pipe\") (mut externref))\n\t\t(global $tanahvoff (import \"global\" \"_object_tanah_voff\") (mut i32))\n\t\t(global $tanahinstoff (import \"global\" \"_object_tanah_instoff\") (mut i32))\n\t\t(global $tanahindroff (import \"global\" \"tanah_indroff\") (mut i32))\n\t\t\t\n\t\t;;tank\n\t\t(global $strtankpipe (import \"global\" \"tank_pipe\") (mut externref))\n\t\t(global $tankvoff (import \"global\" \"_object_tank_voff\") (mut i32))\n\t\t(global $tankinstoff (import \"global\" \"_object_tank_instoff\") (mut i32))\n\t\t(global $tankindroff (import \"global\" \"tank_indroff\") (mut i32))\n\t\t\t\n\t\t;;splash0\n\t\t(global $strsplash0pipe (import \"global\" \"splash0_pipe\") (mut externref))\n\t\t(global $splash0voff (import \"global\" \"_object_splash0_voff\") (mut i32))\n\t\t(global $splash0instoff (import \"global\" \"_object_splash0_instoff\") (mut i32))\n\t\t(global $splash0indroff (import \"global\" \"splash0_indroff\") (mut i32))\n\n",
 			"visible": true,
-			"time": "1503771.6890953109",
+			"time": "1514632.9584954577",
 			"speed": "1",
 			"running": true,
 			"color": [
@@ -211,7 +211,7 @@
 			]
 		},
 		{
-			"text": "\n(func $set_t (export \"set_t\")\n\t(param $t1 i32)\n\t(param $dt1 i32)\n\t(param $env_t1 i32)\n\t(param $env_dt1 i32)\n\t\n\t\tlocal.get $t1\n\tglobal.set $t\n\t\tlocal.get $dt1\n\tglobal.set $dt\n\t\tlocal.get $env_t1\n\tglobal.set $env_t\n\t\tlocal.get $env_dt1\n\tglobal.set $env_dt\n\t;;sampe sini\n)\n",
+			"text": "\n(func $set_t (export \"set_t\")\n\t(param $t1 i32)\n\t(param $dt1 i32)\n\t(param $env_t1 i32)\n\t(param $env_dt1 i32)\n\t\n\t\tlocal.get $t1\n\tglobal.set $t\n\t\tlocal.get $dt1\n\tglobal.set $dt\n\t\tlocal.get $env_t1\n\tglobal.set $env_t\n\t\tlocal.get $env_dt1\n\tglobal.set $env_dt\n)\n",
 			"visible": true,
 			"time": "0",
 			"speed": "1",
@@ -361,6 +361,21 @@
 					"frame": "0"
 				}
 			]
+		},
+		{
+			"text": "\n(func $wb_inst_splash0 (export \"write_inst_splash0\")\n\t(param $memoff i32)\n\t(param $size i32)\n\t\n\t\tglobal.get $strobjv\n\t\tglobal.get $splash0instoff\n\t\tglobal.get $strmem\n\t\tlocal.get $memoff\n\t\tlocal.get $size\n\tcall $wb\n)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "255",
+					"b": "155",
+					"frame": "0"
+				}
+			]
 		}
 	],
 	[
@@ -425,7 +440,7 @@
 			]
 		},
 		{
-			"text": "\n(func $set_uo ;;uniform other\n\t(param $memoff i32)\n\t\n;;arahsinar\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 160 ;;lokasi extra\n\t\ti32.add\n\t\tglobal.get $_uni_arahsinar\n\ti32.store8 $mem\n\t\n;;time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 164;;lokasi time\n\t\ti32.add\n\t\tglobal.get $t\n\ti32.store $mem\n\t\n;;delta time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 168;;lokasi delta time\n\t\ti32.add\n\t\tglobal.get $dt\n\ti32.store $mem\n\t\n;;env time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 172;;lokasi env time\n\t\ti32.add\n\t\tglobal.get $env_t\n\ti32.store $mem\n\t\n;;env delta time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 176;;lokasi delta env time\n\t\ti32.add\n\t\tglobal.get $env_dt\n\ti32.store $mem\n)\n",
+			"text": "\n(func $set_uo ;;uniform other\n\t(param $memoff i32)\n\t\n;;arahsinar\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 176 ;;lokasi extra\n\t\ti32.add\n\t\tglobal.get $_uni_arahsinar\n\ti32.store8 $mem\n\t\n;;time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 180;;lokasi time\n\t\ti32.add\n\t\tglobal.get $t\n\ti32.store $mem\n\t\n;;delta time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 184;;lokasi delta time\n\t\ti32.add\n\t\tglobal.get $dt\n\ti32.store $mem\n\t\n;;env time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 188;;lokasi env time\n\t\ti32.add\n\t\tglobal.get $env_t\n\ti32.store $mem\n\t\n;;env delta time\n\t\t\tlocal.get $memoff\n\t\t\ti32.const 192;;lokasi delta env time\n\t\ti32.add\n\t\tglobal.get $env_dt\n\ti32.store $mem\n)\n",
 			"visible": true,
 			"time": "0",
 			"speed": "1",
@@ -459,7 +474,7 @@
 		{
 			"text": "\n\t(func $drawall (export \"draw\")\n\t\t(result externref)\n\t\t\n;;`````````````````````````|\n\t\tcall $enco_enco0\n;;_________________________|\n\t\t\n\t\tcall $submit\n\t)\n",
 			"visible": true,
-			"time": "1486867.5132976496",
+			"time": "1497728.7826977964",
 			"speed": "1",
 			"running": true,
 			"color": [
@@ -497,7 +512,7 @@
 		{
 			"text": "\n\t(func $enco_enco0\n\t\t;;enco0 +++++++++++++++++++\n\t\tglobal.get $strenco0\n\t\tcall $cce\n\t\t\n;;`````````````````````````|\n\t\tcall $rp_enco0mesh\n;;_________________________|\n\t\t\n\t\tcall $finish\n\t)\n",
 			"visible": true,
-			"time": "1486567.7850976493",
+			"time": "1497429.054497796",
 			"speed": "1",
 			"running": true,
 			"color": [
@@ -556,9 +571,9 @@
 			]
 		},
 		{
-			"text": "\n\t(func $rp_enco0mesh\n\t\t;;mesh +++++++++++++++++++\n\t\tglobal.get $strmeshrp\n\t\tcall $brp\n\t\t\n\t\tglobal.get $strobji\n\t\tglobal.get $struint16\n\t\ti32.const 0\n\t\ti32.const -333 ;;omitted\n\t\tcall $sib\n\t\t\n\t\ti32.const 0\n\t\tglobal.get $strbind0\n\t\tcall $sbg\n\t\t\t\n;;`````````````````````````|\n\t\t\tcall $draw_enco0meshchara0\n\t\t\tcall $draw_enco0meshstick\n\t\t\tcall $draw_enco0meshbunga\n\t\t\tcall $draw_enco0meshtanah\n\t\t\tcall $draw_enco0meshtank\n;;_________________________|\n\t\t\t\n\t\tcall $end\n\t)\n",
+			"text": "\n\t(func $rp_enco0mesh\n\t\t;;mesh +++++++++++++++++++\n\t\tglobal.get $strmeshrp\n\t\tcall $brp\n\t\t\n\t\tglobal.get $strobji\n\t\tglobal.get $struint16\n\t\ti32.const 0\n\t\ti32.const -333 ;;omitted\n\t\tcall $sib\n\t\t\n\t\ti32.const 0\n\t\tglobal.get $strbind0\n\t\tcall $sbg\n\t\t\t\n;;`````````````````````````|\n\t\t\tcall $draw_enco0meshchara0\n\t\t\tcall $draw_enco0meshstick\n\t\t\tcall $draw_enco0meshbunga\n\t\t\tcall $draw_enco0meshtanah\n\t\t\tcall $draw_enco0meshtank\n\t\t\tcall $draw_enco0meshsplash0\n;;_________________________|\n\t\t\t\n\t\tcall $end\n\t)\n",
 			"visible": true,
-			"time": "8135994.21611996",
+			"time": "8195975.821005934",
 			"speed": "5.522522522522523",
 			"running": true,
 			"color": [
@@ -650,13 +665,28 @@
 					"frame": "0"
 				}
 			]
+		},
+		{
+			"text": "\n\t(func $draw_enco0meshsplash0\n\t\t;;splash0+++++++++++++++++++\n\t\t\n\t\ti32.const 0\n\t\tglobal.get $strobjv\n\t\tglobal.get $splash0voff\n\t\ti32.const -333 ;;omitted\n\t\tcall $svb\n\t\t\t\n\t\ti32.const 1\n\t\tglobal.get $strobjv\n\t\tglobal.get $splash0instoff\n\t\ti32.const -333 ;;omitted\n\t\tcall $svb\n\t\t\n\t\tglobal.get $strsplash0pipe\n\t\tcall $sp\n\t\t\n\t\tglobal.get $strobjind\n\t\tglobal.get $splash0indroff\n\t\tcall $dii\n\t)\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
 		}
 	],
 	[
 		{
 			"text": "\n;;=+=+=+=+=+=+=+=+=+=+=+=+=\n)\n",
 			"visible": true,
-			"time": "1531399.4753958033",
+			"time": "1542260.7447959501",
 			"speed": "1",
 			"running": true,
 			"color": [

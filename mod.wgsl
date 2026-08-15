@@ -20,6 +20,8 @@ struct stuni{
 	pecut:objso,
 	tanah:objso,
 	tank:objso,
+	splash0:objso,
+	//:objso,
 //-=-=-=-=-=-=-=-=-
 	cam:mat4x4f,
 	wb:vec4f, //warna bayangan
@@ -565,6 +567,32 @@ fn hkb(
 	,); //baut
 	
 	return warna;
+}
+
+@vertex fn splash0_vert(
+	
+	@location(0) posv:vec3f,
+	
+	@builtin(vertex_index) vi:u32,
+	@builtin(instance_index) ii:u32,
+)-> splash0_out {
+	
+	var p1 = vec4f(posv,1.,);
+	p1.y = acakbit3(f32(vi));
+	
+	return splash0_out(
+		uni.cam*p1,
+	);
+}
+
+struct splash0_out{
+	@builtin(position) posout:vec4f,
+}
+
+@fragment fn splash0_frag(
+	o:splash0_out,
+)-> @location(0) vec4f {
+	return vec4f(1.15,.1,1.05,1.,);
 }
 
 /*

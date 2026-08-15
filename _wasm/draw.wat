@@ -93,6 +93,12 @@
 		(global $tankvoff (import "global" "_object_tank_voff") (mut i32))
 		(global $tankinstoff (import "global" "_object_tank_instoff") (mut i32))
 		(global $tankindroff (import "global" "tank_indroff") (mut i32))
+			
+		;;splash0
+		(global $strsplash0pipe (import "global" "splash0_pipe") (mut externref))
+		(global $splash0voff (import "global" "_object_splash0_voff") (mut i32))
+		(global $splash0instoff (import "global" "_object_splash0_instoff") (mut i32))
+		(global $splash0indroff (import "global" "splash0_indroff") (mut i32))
 
 
 ;;uniform other -==-=-=-=-==--==-=-=-=-=-=-==-=-=-=-=-=-=-==-=-=-=-==-=-=-=-==--==-=-=-=-=-=-==-=-=-=-=-=-=-==-=-=-=
@@ -128,7 +134,6 @@
 	global.set $env_t
 		local.get $env_dt1
 	global.set $env_dt
-	;;sampe sini
 )
 
 (func $wb_inst_chara0 (export "write_inst_chara0")
@@ -227,6 +232,18 @@
 	call $wb
 )
 
+(func $wb_inst_splash0 (export "write_inst_splash0")
+	(param $memoff i32)
+	(param $size i32)
+	
+		global.get $strobjv
+		global.get $splash0instoff
+		global.get $strmem
+		local.get $memoff
+		local.get $size
+	call $wb
+)
+
 (func $wb_sto (export "write_sto")
 	(param $memoff i32)
 	(param $size i32)
@@ -264,35 +281,35 @@
 	
 ;;arahsinar
 			local.get $memoff
-			i32.const 160 ;;lokasi extra
+			i32.const 176 ;;lokasi extra
 		i32.add
 		global.get $_uni_arahsinar
 	i32.store8 $mem
 	
 ;;time
 			local.get $memoff
-			i32.const 164;;lokasi time
+			i32.const 180;;lokasi time
 		i32.add
 		global.get $t
 	i32.store $mem
 	
 ;;delta time
 			local.get $memoff
-			i32.const 168;;lokasi delta time
+			i32.const 184;;lokasi delta time
 		i32.add
 		global.get $dt
 	i32.store $mem
 	
 ;;env time
 			local.get $memoff
-			i32.const 172;;lokasi env time
+			i32.const 188;;lokasi env time
 		i32.add
 		global.get $env_t
 	i32.store $mem
 	
 ;;env delta time
 			local.get $memoff
-			i32.const 176;;lokasi delta env time
+			i32.const 192;;lokasi delta env time
 		i32.add
 		global.get $env_dt
 	i32.store $mem
@@ -377,6 +394,7 @@
 			call $draw_enco0meshbunga
 			call $draw_enco0meshtanah
 			call $draw_enco0meshtank
+			call $draw_enco0meshsplash0
 ;;_________________________|
 			
 		call $end
@@ -494,6 +512,29 @@
 		
 		global.get $strobjind
 		global.get $tankindroff
+		call $dii
+	)
+
+	(func $draw_enco0meshsplash0
+		;;splash0+++++++++++++++++++
+		
+		i32.const 0
+		global.get $strobjv
+		global.get $splash0voff
+		i32.const -333 ;;omitted
+		call $svb
+			
+		i32.const 1
+		global.get $strobjv
+		global.get $splash0instoff
+		i32.const -333 ;;omitted
+		call $svb
+		
+		global.get $strsplash0pipe
+		call $sp
+		
+		global.get $strobjind
+		global.get $splash0indroff
 		call $dii
 	)
 

@@ -6,7 +6,8 @@ campipe	-999999	cam_pipe
 stickpipe	-999999	stick_pipe	
 bungapipe	-999999	bunga_pipe	
 tanahpipe	-999999	tanah_pipe	
-tankpipe	-999999	tank_pipe	<<<
+tankpipe	-999999	tank_pipe	
+splash0pipe	-999999	splash0_pipe	<<<
 mesh_rp0	3333	mesh rp	
 mesh_rp0	-999999	mesh rp	
 mesh_rp1	-1111	mesh rp	

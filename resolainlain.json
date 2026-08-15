@@ -18,7 +18,7 @@
 	"uni": {
 		"type": "gpu_buffer",
 		"descriptor": {
-			"size": 192,
+			"size": 208,
 			"usage": 72,
 			"label": "this is _object uniform, size dihitung di web: wgsl offset computer"
 		},
