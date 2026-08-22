@@ -367,7 +367,7 @@
 		"descriptor": {
 			"array": "wasmmem",
 			"offset": 0,
-			"length": 17,
+			"length": 33,
 			"layout": {}
 		}
 	},
@@ -517,7 +517,7 @@
 		"descriptor": {
 			"array": "wasmmem",
 			"offset": 16320,
-			"length": 17,
+			"length": 33,
 			"layout": {}
 		}
 	},
@@ -2597,7 +2597,7 @@
 			},
 			"layout": "pl0",
 			"primitive": {
-				"cullMode": "back",
+				"cullMode": "none",
 				"topology": "triangle-list"
 			}
 		}

@@ -278,38 +278,56 @@
 
 (func $set_uo ;;uniform other
 	(param $memoff i32)
+	(local $off i32) ;;offset
 	
+	i32.const 176 ;;lokasi uo
+	local.set $off
 ;;arahsinar
+			;;i32.const 176 ;;lokasi extra
+				i32.const 0 ;;lokasi extra dalam uo
+				local.get $off
+			i32.add
 			local.get $memoff
-			i32.const 176 ;;lokasi extra
 		i32.add
 		global.get $_uni_arahsinar
 	i32.store8 $mem
 	
 ;;time
+			;;i32.const 180;;lokasi time
+				i32.const 4 ;;lokasi time dalam uo
+				local.get $off
+			i32.add
 			local.get $memoff
-			i32.const 180;;lokasi time
 		i32.add
 		global.get $t
 	i32.store $mem
 	
 ;;delta time
+			;;i32.const 184;;lokasi delta time
+				i32.const 8 ;;lokasi deltadalam uo
+				local.get $off
+			i32.add
 			local.get $memoff
-			i32.const 184;;lokasi delta time
 		i32.add
 		global.get $dt
 	i32.store $mem
 	
 ;;env time
+			;;i32.const 188;;lokasi env time
+				i32.const 12 ;;lokasi env dalam uo
+				local.get $off
+			i32.add
 			local.get $memoff
-			i32.const 188;;lokasi env time
 		i32.add
 		global.get $env_t
 	i32.store $mem
 	
 ;;env delta time
+			;;i32.const 192;;lokasi delta env time
+				i32.const 16 ;;lokasi delta dalam uo
+				local.get $off
+			i32.add
 			local.get $memoff
-			i32.const 192;;lokasi delta env time
 		i32.add
 		global.get $env_dt
 	i32.store $mem

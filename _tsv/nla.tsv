@@ -5,7 +5,7 @@ act1_info	chara0badanputar	56.2998046875	284.0	2.0	4257.99951171875	4713.3999023
 act1_info	chara0badanputar	56.2998046875	284.0	1.0	4714.3994140625	6444.9208984375	badanputar	putar
 act1_info	chara0	0.0	100000.0	1.0	0.0	100000.0	tr_chara0	pindah root
 act1_info	chara0walk0	0.0	100000.0	1.0	0.0	100000.0	tr1_chara0	lengkap
-act1_info	pecut	-462.0	100000.0	1.0	-462.0	100000.0	pecut	pecut
+act1_info	pecut	0.0	100000.0	1.0	0.0	100000.0	pecut	pecut
 act1_info	timer	0.0	8012.0	1.0	0.0	8012.0	tr_timer	timer, (x = stick, y&z = kosonggg)
 act1_info	tank0	0.0	100000.0	1.0	0.0	100000.0	tankgerak	bidikkkk
 act1_info	wave	-99999.0	99999.0	1.0	-99999.0	99999.0	track_wave	ini wave

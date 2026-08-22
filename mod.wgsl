@@ -558,7 +558,7 @@ fn hkb(
 	
 	let ob = offset_baut;
 	var warna = vec4f(wca,1.,); //border
-	warna = select(warna,vec4f(wf,1.,),hborder < u,); //sampe sini, //fill //vec4f(u,.0,v,1.,)
+	warna = select(warna,vec4f(wf,1.,),hborder < u,); //fill
 	warna = select(warna,vec4f(wb,1.,),
 		distance(
 			vec2f(u,v,),
@@ -577,11 +577,50 @@ fn hkb(
 	@builtin(instance_index) ii:u32,
 )-> splash0_out {
 	
-	var p1 = vec4f(posv,1.,);
-	p1.y = acakbit3(f32(vi));
+	let fvi = f32(vi);
+	let fii = f32(ii);
+	let envt = f32(uni.env_t)*.001;
+	let s = select(.5,4.,ii == 0u,); //scale
+	let t1 = max(envt-15.5-fii*.01,-.022,) *4./s;
+	
+	var p1 = posv;
+//bentuk awal
+	p1.x *= acakbit3(fvi*(fii+.46))*.33+1.;
+	p1.z *= acakbit3(fvi*(fii+.85))*.33+1.;
+//animasi
+	let yspike = acakbit3(fvi*(fii+.11))*.77+.8;
+	
+	let t2 = min(0.,(t1-.79)*4.08,);
+	p1.y *=
+		mix(1.,yspike,min(t1,4.,)*.3,)
+		*(-t2*t2+11.)
+	;
+	p1.x += p1.x*p1.y*.1;
+	p1.z += p1.z*p1.y*.1;
+	
+	p1.y -= t1*6.; //-acakbit3(p1.y+t1+444.21);
+	
+	
+//scale
+	let r = fii*5.+55.; //radius
+	p1 *= s;
+//formasi inst
+	p1 += select(
+		polar(acakbit3(fii)*pi*2.,r,),
+		vec3f(.0),
+		ii == 0u,
+	);
+//pos pusat
+	p1 += bones[uni.tank.offset][3].xyz;
+//muncul
+	p1 *= select(.0,1.,
+		.0 < t1
+	,);
+	
+	
 	
 	return splash0_out(
-		uni.cam*p1,
+		uni.cam*vec4f(p1,1.,),
 	);
 }
 
@@ -592,7 +631,7 @@ struct splash0_out{
 @fragment fn splash0_frag(
 	o:splash0_out,
 )-> @location(0) vec4f {
-	return vec4f(1.15,.1,1.05,1.,);
+	return vec4f(.7,.6,.4,.7,);
 }
 
 /*
@@ -1128,6 +1167,23 @@ vec3f(0.15151520091741477181	,-0.98828125000000000000	,-0.01852875574324815838	,
 vec3f(-0.07186996606009658783	,-0.99609375000000000000	,-0.05130252615084396339	,),
 
 );
+fn epilepsi(
+
+)->vec4f{
+	let out = select(vec4f(1.));
+	
+	return out;
+}
+
+//dari sudut & jarak jadi xz
+fn polar(angle: f32, radius: f32) -> vec3f {
+	return vec3f(
+		cos(angle),
+		.0,
+		sin(angle),
+	)*radius;
+}
+
 fn flomod(a:f32,b:f32,)->f32{ //florred modulo
 	return ((a % b) + b) % b;
 }

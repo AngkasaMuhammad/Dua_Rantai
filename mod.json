@@ -463,7 +463,7 @@
 			]
 		},
 		{
-			"text": "\nfn hopscotch(\n\tx0:f32,\n\tz0:f32,\n) -> vec4f{\n\t\n\tlet z = flomod(floor(z0),5.,);\n\tlet x = flomod(z*2.+x0,5.,);\n\tlet u = flomod(x0,1.,);\n\tlet v = flomod(z0,1.,);\n\t\n\tvar warna0 = hkk(u,v,);\n\twarna0 = select(warna0,hkb(u,v,),1. < x,);\n\twarna0 = select(warna0,hkb(1.-u,v,),2. < x,);\n\twarna0 = select(warna0,hkb(u,1.-v,),3. < x,);\n\twarna0 = select(warna0,hkb(1.-u,1.-v,),4. < x,);\n\t\n\treturn warna0;\n}\n\n\n\n//hopscotch kotak kecil -+-+-+-+-+-+-+-+-+-+-+-\nfn hkk(\n\tu:f32,\n\tv:f32,\n) ->vec4f{\n\tlet wca = warna_celah_armor;\n\tlet wkk = warna_kotak_kecil;\n\tlet hb = hborder;\n\treturn select(\n\t\tvec4f(wca,1.,),\n\t\tvec4f(wkk,1.,),\n\t\thb < u\n\t\t&& u < 1.-hb\n\t\t&& hb < v\n\t\t&& v < 1.-hb\n\t\t,\n\t);\n}\n\n//hopscotch kotak besar -+-+-+-+-+-+-+-+-+-+-+-\nfn hkb(\n\tu0:f32,\n\tv0:f32,\n) ->vec4f{\n\tlet wca = warna_celah_armor;\n\tlet wb = warna_baut;\n\tlet wf = warna_fill;\n\tlet u = select(u0,v0,u0 > v0,);\n\tlet v = select(v0,u0,u0 > v0,);\n\t\n\tlet ob = offset_baut;\n\tvar warna = vec4f(wca,1.,); //border\n\twarna = select(warna,vec4f(wf,1.,),hborder < u,); //sampe sini, //fill //vec4f(u,.0,v,1.,)\n\twarna = select(warna,vec4f(wb,1.,),\n\t\tdistance(\n\t\t\tvec2f(u,v,),\n\t\t\tvec2f(.05,floor((v+ob)/ob/2.)*ob*2.,),\n\t\t) < .01\n\t,); //baut\n\t\n\treturn warna;\n}\n",
+			"text": "\nfn hopscotch(\n\tx0:f32,\n\tz0:f32,\n) -> vec4f{\n\t\n\tlet z = flomod(floor(z0),5.,);\n\tlet x = flomod(z*2.+x0,5.,);\n\tlet u = flomod(x0,1.,);\n\tlet v = flomod(z0,1.,);\n\t\n\tvar warna0 = hkk(u,v,);\n\twarna0 = select(warna0,hkb(u,v,),1. < x,);\n\twarna0 = select(warna0,hkb(1.-u,v,),2. < x,);\n\twarna0 = select(warna0,hkb(u,1.-v,),3. < x,);\n\twarna0 = select(warna0,hkb(1.-u,1.-v,),4. < x,);\n\t\n\treturn warna0;\n}\n\n\n\n//hopscotch kotak kecil -+-+-+-+-+-+-+-+-+-+-+-\nfn hkk(\n\tu:f32,\n\tv:f32,\n) ->vec4f{\n\tlet wca = warna_celah_armor;\n\tlet wkk = warna_kotak_kecil;\n\tlet hb = hborder;\n\treturn select(\n\t\tvec4f(wca,1.,),\n\t\tvec4f(wkk,1.,),\n\t\thb < u\n\t\t&& u < 1.-hb\n\t\t&& hb < v\n\t\t&& v < 1.-hb\n\t\t,\n\t);\n}\n\n//hopscotch kotak besar -+-+-+-+-+-+-+-+-+-+-+-\nfn hkb(\n\tu0:f32,\n\tv0:f32,\n) ->vec4f{\n\tlet wca = warna_celah_armor;\n\tlet wb = warna_baut;\n\tlet wf = warna_fill;\n\tlet u = select(u0,v0,u0 > v0,);\n\tlet v = select(v0,u0,u0 > v0,);\n\t\n\tlet ob = offset_baut;\n\tvar warna = vec4f(wca,1.,); //border\n\twarna = select(warna,vec4f(wf,1.,),hborder < u,); //fill\n\twarna = select(warna,vec4f(wb,1.,),\n\t\tdistance(\n\t\t\tvec2f(u,v,),\n\t\t\tvec2f(.05,floor((v+ob)/ob/2.)*ob*2.,),\n\t\t) < .01\n\t,); //baut\n\t\n\treturn warna;\n}\n",
 			"visible": true,
 			"time": "0",
 			"speed": "1",
@@ -495,7 +495,7 @@
 			]
 		},
 		{
-			"text": "\n@vertex fn splash0_vert(\n\t\n\t@location(0) posv:vec3f,\n\t\n\t@builtin(vertex_index) vi:u32,\n\t@builtin(instance_index) ii:u32,\n)-> splash0_out {\n\t\n\tvar p1 = vec4f(posv,1.,);\n\tp1.y = acakbit3(f32(vi));\n\t\n\treturn splash0_out(\n\t\tuni.cam*p1,\n\t);\n}\n",
+			"text": "\n@vertex fn splash0_vert(\n\t\n\t@location(0) posv:vec3f,\n\t\n\t@builtin(vertex_index) vi:u32,\n\t@builtin(instance_index) ii:u32,\n)-> splash0_out {\n\t\n\tlet fvi = f32(vi);\n\tlet fii = f32(ii);\n\tlet envt = f32(uni.env_t)*.001;\n\tlet s = select(.5,4.,ii == 0u,); //scale\n\tlet t1 = max(envt-15.5-fii*.01,-.022,) *4./s;\n\t\n\tvar p1 = posv;\n//bentuk awal\n\tp1.x *= acakbit3(fvi*(fii+.46))*.33+1.;\n\tp1.z *= acakbit3(fvi*(fii+.85))*.33+1.;\n//animasi\n\tlet yspike = acakbit3(fvi*(fii+.11))*.77+.8;\n\t\n\tlet t2 = min(0.,(t1-.79)*4.08,);\n\tp1.y *=\n\t\tmix(1.,yspike,min(t1,4.,)*.3,)\n\t\t*(-t2*t2+11.)\n\t;\n\tp1.x += p1.x*p1.y*.1;\n\tp1.z += p1.z*p1.y*.1;\n\t\n\tp1.y -= t1*6.; //-acakbit3(p1.y+t1+444.21);\n\t\n\t\n//scale\n\tlet r = fii*5.+55.; //radius\n\tp1 *= s;\n//formasi inst\n\tp1 += select(\n\t\tpolar(acakbit3(fii)*pi*2.,r,),\n\t\tvec3f(.0),\n\t\tii == 0u,\n\t);\n//pos pusat\n\tp1 += bones[uni.tank.offset][3].xyz;\n//muncul\n\tp1 *= select(.0,1.,\n\t\t.0 < t1\n\t,);\n\t\n\t\n\t\n\treturn splash0_out(\n\t\tuni.cam*vec4f(p1,1.,),\n\t);\n}\n",
 			"visible": true,
 			"time": "0",
 			"speed": "1",
@@ -517,24 +517,24 @@
 			"running": false,
 			"color": [
 				{
-					"r": "255",
-					"g": "255",
-					"b": "255",
+					"r": "222",
+					"g": "222",
+					"b": "222",
 					"frame": "0"
 				}
 			]
 		},
 		{
-			"text": "\n@fragment fn splash0_frag(\n\to:splash0_out,\n)-> @location(0) vec4f {\n\treturn vec4f(1.15,.1,1.05,1.,);\n}\n",
+			"text": "\n@fragment fn splash0_frag(\n\to:splash0_out,\n)-> @location(0) vec4f {\n\treturn vec4f(.7,.6,.4,.7,);\n}\n",
 			"visible": true,
 			"time": "0",
 			"speed": "1",
 			"running": false,
 			"color": [
 				{
-					"r": "255",
-					"g": "255",
-					"b": "255",
+					"r": "188",
+					"g": "188",
+					"b": "188",
 					"frame": "0"
 				}
 			]
@@ -599,6 +599,36 @@
 					"r": "12",
 					"g": "155",
 					"b": "155",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\nfn epilepsi(\n\n)->vec4f{\n\tlet out = select(vec4f(1.));\n\t\n\treturn out;\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "255",
+					"g": "255",
+					"b": "255",
+					"frame": "0"
+				}
+			]
+		},
+		{
+			"text": "\n//dari sudut & jarak jadi xz\nfn polar(angle: f32, radius: f32) -> vec3f {\n\treturn vec3f(\n\t\tcos(angle),\n\t\t.0,\n\t\tsin(angle),\n\t)*radius;\n}\n",
+			"visible": true,
+			"time": "0",
+			"speed": "1",
+			"running": false,
+			"color": [
+				{
+					"r": "155",
+					"g": "188",
+					"b": "122",
 					"frame": "0"
 				}
 			]
@@ -816,7 +846,7 @@
 		{
 			"text": "\n//+++++++++++++++++++++++ganjel scroll++++++++++++++++++++\n",
 			"visible": true,
-			"time": "7441852.056431605",
+			"time": "8377505.934038956",
 			"speed": "5.0000000000000036",
 			"running": true,
 			"color": [
