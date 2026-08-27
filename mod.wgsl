@@ -1170,7 +1170,7 @@ vec3f(-0.07186996606009658783	,-0.99609375000000000000	,-0.05130252615084396339	
 fn epilepsi(
 
 )->vec4f{
-	let out = select(vec4f(1.));
+	let out = vec4f(1.);
 	
 	return out;
 }
