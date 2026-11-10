@@ -1,4 +1,4 @@
-# Dua_Rantai
+# Dua_Rantai (unfinished)
 Animasi tentang rantai bunga & stick bomb menghancurkan tank
 
 animasi ini tidak dilanjutkan karena saat proses pembuatan, pcku rusak
